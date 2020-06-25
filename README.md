@@ -1,2 +1,0 @@
-# sruthi-project
-Microbiome analysis
