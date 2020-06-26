@@ -1,0 +1,70 @@
+SampleID,Sample-Name,Sample-type,Donor-status,Instrument,Bases
+SRR7142464,D8,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,28109500
+SRR7142465,D11,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,26276000
+SRR7142466,D10,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,22706000
+SRR7142467,I17,Stool,CRC patient,Illumina HiSeq 4000,18842500
+SRR7142468,C24,Stool,Healthy individual,Illumina HiSeq 4000,28770500
+SRR7142469,C23,Stool,Healthy individual,Illumina HiSeq 4000,27923500
+SRR7142470,C22,Stool,Healthy individual,Illumina HiSeq 4000,29077500
+SRR7142471,C21,Stool,Healthy individual,Illumina HiSeq 4000,27096500
+SRR7142472,C28,Stool,Healthy individual,Illumina HiSeq 4000,27719500
+SRR7142473,C27,Stool,Healthy individual,Illumina HiSeq 4000,29826000
+SRR7142474,C26,Stool,Healthy individual,Illumina HiSeq 4000,17844000
+SRR7142475,C25,Stool,Healthy individual,Illumina HiSeq 4000,26912500
+SRR7142476,IO4,Stool,Surgically treated DRD patients,Illumina HiSeq 4000,15408000
+SRR7142477,IO3,Stool,Surgically treated DRD patients,Illumina HiSeq 4000,22496000
+SRR7142478,C30,Stool,Healthy individual,Illumina HiSeq 4000,26401500
+SRR7142479,C29,Stool,Healthy individual,Illumina HiSeq 4000,25369000
+SRR7142480,I3,Stool,CRC patient,Illumina HiSeq 4000,26876500
+SRR7142481,I2,Stool,CRC patient,Illumina HiSeq 4000,18346500
+SRR7142482,I15,Stool,CRC patient,Illumina HiSeq 4000,27442000
+SRR7142483,I14,Stool,CRC patient,Illumina HiSeq 4000,25671500
+SRR7142484,IO2,Stool,Surgically treated DRD patients,Illumina HiSeq 4000,28756500
+SRR7142485,IO5,Stool,Surgically treated DRD patients,Illumina HiSeq 4000,16031000
+SRR7142486,C9,Stool,Healthy individual,Illumina HiSeq 4000,23608000
+SRR7142487,C10,Stool,Healthy individual,Illumina HiSeq 4000,27955000
+SRR7142488,IO1,Stool,Surgically treated DRD patients,Illumina HiSeq 4000,27625500
+SRR7142489,C3,Stool,Healthy individual,Illumina HiSeq 4000,31579500
+SRR7142490,C4,Stool,Healthy individual,Illumina HiSeq 4000,18462000
+SRR7142491,C1,Stool,Healthy individual,Illumina HiSeq 4000,30532500
+SRR7142492,C2,Stool,Healthy individual,Illumina HiSeq 4000,29943500
+SRR7142493,C7,Stool,Healthy individual,Illumina HiSeq 4000,31790500
+SRR7142494,C8,Stool,Healthy individual,Illumina HiSeq 4000,19041000
+SRR7142495,C5,Stool,Healthy individual,Illumina HiSeq 4000,27241500
+SRR7142496,C6,Stool,Healthy individual,Illumina HiSeq 4000,26237500
+SRR7142497,I8,Stool,CRC patient,Illumina HiSeq 4000,21517500
+SRR7142498,D2,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,20043500
+SRR7142499,I12,Stool,CRC patient,Illumina HiSeq 4000,26440500
+SRR7142500,D3,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,16545000
+SRR7142501,C31,Stool,Healthy individual,Illumina HiSeq 4000,20732500
+SRR7142502,D4,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,19923500
+SRR7142503,C19,Stool,Healthy individual,Illumina HiSeq 4000,30464500
+SRR7142504,C20,Stool,Healthy individual,Illumina HiSeq 4000,21788500
+SRR7142505,D6,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,24319500
+SRR7142506,D7,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,24008500
+SRR7142507,D5,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,28002000
+SRR7142508,C13,Stool,Healthy individual,Illumina HiSeq 4000,12429500
+SRR7142509,C14,Stool,Healthy individual,Illumina HiSeq 4000,25451000
+SRR7142510,C11,Stool,Healthy individual,Illumina HiSeq 4000,18830500
+SRR7142511,C12,Stool,Healthy individual,Illumina HiSeq 4000,19217000
+SRR7142512,C17,Stool,Healthy individual,Illumina HiSeq 4000,30241000
+SRR7142513,C18,Stool,Healthy individual,Illumina HiSeq 4000,29776500
+SRR7142514,C15,Stool,Healthy individual,Illumina HiSeq 4000,27913000
+SRR7142515,C16,Stool,Healthy individual,Illumina HiSeq 4000,20122000
+SRR7142516,I10,Stool,CRC patient,Illumina HiSeq 4000,29690000
+SRR7142517,I11,Stool,CRC patient,Illumina HiSeq 4000,26204000
+SRR7142518,C32,Stool,Healthy individual,Illumina HiSeq 4000,25724000
+SRR7142519,I9,Stool,CRC patient,Illumina HiSeq 4000,31247500
+SRR7142520,I6,Stool,CRC patient,Illumina HiSeq 4000,24546500
+SRR7142521,I7,Stool,CRC patient,Illumina HiSeq 4000,26527500
+SRR7142522,I4,Stool,CRC patient,Illumina HiSeq 4000,18092000
+SRR7142523,I5,Stool,CRC patient,Illumina HiSeq 4000,25447500
+SRR7142524,C33,Stool,Healthy individual,Illumina HiSeq 4000,26154500
+SRR7142525,D1,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,20944000
+SRR7142526,I13,Stool,CRC patient,Illumina HiSeq 4000,17880500
+SRR7142527,I16,Stool,CRC patient,Illumina HiSeq 4000,27469500
+SRR7142528,D13,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,28906000
+SRR7142529,D12,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,26235000
+SRR7142530,I1,Stool,CRC patient,Illumina HiSeq 4000,30080500
+SRR7142531,D14,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,29614000
+SRR7142532,D9,Stool,Chemotherapy treated CRC patient,Illumina HiSeq 4000,26160000
