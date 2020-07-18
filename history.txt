@@ -1,0 +1,1000 @@
+   90  R
+   91  yum update
+   92  cd ~
+   93  yum update
+   94  ls
+   95  cd ..
+   96  ls
+   97  yum update
+   98  cd ..
+   99  ls
+  100  cd root/
+  101  cd tmp/
+  102  ls
+  103  cd ~
+  104  ls
+  105  cd ../../..
+  106  cd work/unobioinformatics/ssravanam/
+  107  conda install -c R R=4.0.0
+  108  conda install -c r r=4.0.0
+  109  ls
+  110  cd example/
+  111  ls
+  112  qiime dada2 denoise-paired --i-demultiplexed-seqs ./mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  113  source activate qiime2.2020.0
+  114  cd ..
+  115  ls
+  116  source activate qiime2-2020.2
+  117  cd example/
+  118  qiime dada2 denoise-paired --i-demultiplexed-seqs ./mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  119  qiime dada2 denoise-paired --i-demultiplexed-seqs ./mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --p-n-reads-learn 200000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  120  module spider compiler
+  121  module load compiler/gcc/9.1
+  122  cd /work/unobioinformatics/ssravanam
+  123  cd $ WORK
+  124  pwd
+  125  #!/bin/bash
+  126  #SBATCH --time=03:15:00          # Run time in hh:mm:ss
+  127  #SBATCH --mem-per-cpu=1024       # Maximum memory required per CPU (in megabytes)
+  128  #SBATCH --job-name=hello-world
+  129  #SBATCH --error=/work/[groupname]/[username]/job.%J.err
+  130  #SBATCH --output=/work/[groupname]/[username]/job.%J.out
+  131  module load example/test
+  132  hostname
+  133  sleep 60
+  134  cd $work
+  135  ls
+  136  cd ~
+  137  pwd
+  138  cd  ../../..
+  139  cd work/unobioinformatics/issravanam
+  140  cd work/unobioinformatics/ssravanam
+  141  Trimmomatic
+  142   for f in $(data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | sort -u); do echo java -jar ./Trimmomatic-0.39/trimmomatic-0.39.jar  PE -phred33 ${f}_1.fastq.gz ${f}_2.fastq.gz ${f}_1_paired.fastq.gz ${f}_1_up.fastq.gz ${f}_2_paired.fastq.gz ${f}_2_up.fastq.gz ILLUMINACLIP:Trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads HEADCROP:5 LEADING:3 TRAILING:3 MINLEN:36; done
+  143  cd ..
+  144  cd work/unobioinformatics/ssravanam
+  145  ls
+  146  cd ../../..
+  147  cd work/unobioinformatics/ssravanam/
+  148  ls
+  149  module spider compiler
+  150  module load <module>
+  151  module spider compiler
+  152  module spider compiler/gcc/9.1
+  153  module load comiler/gcc/9.1
+  154  module load compiler/gcc/9.1
+  155  cd $work
+  156  pwd
+  157  cd ../../..
+  158  cd $work/unobioinformatics/ssravanam
+  159  ls
+  160  cd work/unobioinformatics/ssravanam/
+  161  module spider compiler
+  162  module load compiler/gcc/9.1
+  163  #!/bin/bash
+  164  #SBATCH --time=03:15:00          # Run time in hh:mm:ss
+  165  #SBATCH --mem-per-cpu=1024       # Maximum memory required per CPU (in megabytes)
+  166  #SBATCH --job-name=hello-world
+  167  #SBATCH --error=/work/[groupname]/[username]/job.%J.err
+  168  #SBATCH --output=/work/[groupname]/[username]/job.%J.out
+  169  module load example/test
+  170  hostname
+  171  #!/bin/bash
+  172  #SBATCH --time=03:15:00          # Run time in hh:mm:ss
+  173  #SBATCH --mem-per-cpu=1024       # Maximum memory required per CPU (in megabytes)
+  174  #SBATCH --job-name=hello-world
+  175  #SBATCH --error=/work/[groupname]/[username]/job.%J.err
+  176  #SBATCH --output=/work/[groupname]/[username]/job.%J.out
+  177  module load example/test
+  178  hostname
+  179  squeue
+  180   for f in $(data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | sort -u); do echo java -jar ./Trimmomatic-0.39/trimmomatic-0.39.jar  PE -phred33 ${f}_1.fastq.gz ${f}_2.fastq.gz ${f}_1_paired.fastq.gz ${f}_1_up.fastq.gz ${f}_2_paired.fastq.gz ${f}_2_up.fastq.gz ILLUMINACLIP:Trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads HEADCROP:5 LEADING:3 TRAILING:3 MINLEN:36; done
+  181  sifo
+  182  sinfo
+  183  vim ~/.aliases
+  184  cd example/
+  185  ls
+  186  vi dada.slurm
+  187  ls
+  188  module load compiler/gcc/9.1
+  189  module load qiime
+  190  cd ..
+  191  ls
+  192  source activate qiime2/2020.2
+  193  source activate qiime2-2020.2
+  194  cd example/
+  195  ls
+  196  sbatch dada.slurm
+  197  vi dada.slurm 
+  198  sbatch dada.slurm
+  199  vi dada.slurm 
+  200  sbatch dada.slurm
+  201  vi dada.slurm 
+  202  sbatch dada.slurm
+  203  vi dada.slurm 
+  204  sbatch dada.slurm
+  205  squeue -u ssravanam
+  206  ls
+  207  squeue -u ssravanam
+  208  squeue -u <ssravanam>
+  209  squeue -u ssravanam
+  210  squeue 27444399
+  211  squeue --job 27444399
+  212  ls
+  213  squeue 27444399ls
+  214  ls
+  215  squeue --job 27444399
+  216  squeue -u ssravanam
+  217  ls
+  218  cd ..
+  219  ls
+  220  cat dada2.err
+  221  cat dada2.out
+  222  ls
+  223  Traceback (most recent call last):
+  224    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/bin/qiime",                                                                                                          line 11, in <module>
+  225      sys.exit(qiime())
+  226    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/lib/python3.                                                                                                         6/site-packages/click/core.py", line 764, in __call__
+  227      return self.main(*args, **kwargs)
+  228    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/lib/python3.                                                                                                         6/site-packages/click/core.py", line 717, in main
+  229      rv = self.invoke(ctx)
+  230    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/lib/python3.                                                                                                         6/site-packages/click/core.py", line 1132, in invoke
+  231      cmd_name, cmd, args = self.resolve_command(ctx, args)
+  232    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/lib/python3.                                                                                                         6/site-packages/click/core.py", line 1171, in resolve_command
+  233      cmd = self.get_command(ctx, cmd_name)
+  234    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/lib/python3.                                                                                                         6/site-packages/q2cli/commands.py", line 100, in get_command
+  235      plugin = self._plugin_lookup[name]
+  236    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/lib/python3.                                                                                                         6/site-packages/q2cli/commands.py", line 76, in _plugin_lookup
+  237      import q2cli.core.cache
+  238    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/lib/python3.                                                                                                         6/site-packages/q2cli/core/cache.py", line 404, in <module>
+  239      CACHE = DeploymentCache()
+  240    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/lib/python3.                                                                                                         6/site-packages/q2cli/core/cache.py", line 58, in __init__
+  241      self._cache_dir = self._get_cache_dir()
+  242    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/lib/python3.                                                                                                         6/site-packages/q2cli/core/cache.py", line 85, in _get_cache_dir
+  243      os.makedirs(cache_dir, exist_ok=True)
+  244    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/lib/python3.                                                                                                         6/os.py", line 210, in makedirs
+  245      makedirs(head, mode, exist_ok)
+  246    File "/home/unobioinformatics/ssravanam/.conda/envs/qiime2-2020.2/lib/python3.                                                                                                         6/os.py", line 220, in makedirs
+  247      mkdir(name, mode)
+  248  vi dada.slurm 
+  249  cd example/
+  250  ls
+  251  vi dada.slurm 
+  252  qiime dada2 denoise-paired --i-demultiplexed-seqs ./mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza
+  253  qiime dada2 denoise-paired --i-demultiplexed-seqs ./mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --p-n-reads-learn 150000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  254  cd ../../..
+  255  cd work/unobioinformatics/ssravanam/
+  256  ls
+  257  qiime dada2 denoise-paired --i-demultiplexed-seqs ./mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --p-n-reads-learn 900000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  258  squeue -u ssravanam
+  259  source activate qiime2/2020.2
+  260  source activate qiime2-2020.2
+  261  module load qiime
+  262  source activate qiime2-2020.2
+  263  qiime dada2 denoise-paired --i-demultiplexed-seqs ./mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --p-n-reads-learn 900000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  264  qiime dada2 denoise-paired --i-demultiplexed-seqs example/mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --p-n-reads-learn 900000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  265  ~/.bashrc
+  266  export TMPDIR=/work/unobioinformatics/ssravanam/
+  267  qiime dada2 denoise-paired --i-demultiplexed-seqs example/mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --p-n-reads-learn 900000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  268  cd ../../..
+  269  cd work/unobioinformatics/ssravanam/
+  270  ls
+  271  mv example/.slurp ./
+  272  mv example/.slurm ./
+  273  mv example/*.slurm .
+  274  ls
+  275  module load qiime
+  276  source activate qiime2-2020.2
+  277  qiime dada2 denoise-paired --i-demultiplexed-seqs example/mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --p-n-reads-learn 900000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  278  qiime --help
+  279  dada2 --help
+  280  qiime dada2 denoise-paired --help
+  281  qiime dada2 denoise-paired --i-demultiplexed-seqs example/mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --p-n-threads 0 --p-n-reads-learn 80000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  282  qiime dada2 denoise-paired --i-demultiplexed-seqs example/mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --p-n-threads 0 --p-n-reads-learn 80000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza 
+  283  qiime dada2 denoise-paired --i-demultiplexed-seqs example/mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --p-n-threads 0  --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza 
+  284  qiime dada2 denoise-paired --i-demultiplexed-seqs example/mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 245 --p-trunc-len-r 245 --p-n-threads 0 --p-n-reads-learn 50000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza 
+  285  qiime dada2 denoise-paired --i-demultiplexed-seqs example/mypaired-end-demux.qza --p-trim-left-f 5 --p-trim-left-r 5 --p-trunc-len-f 250 --p-trunc-len-r 250 --p-n-threads 1 --p-n-reads-learn 800000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  286  qiime dada2 denoise-paired --i-demultiplexed-seqs example/mypaired-end-demux.qza --p-trim-left-f 0 --p-trim-left-r 0 --p-trunc-len-f 250 --p-trunc-len-r 250 --p-n-threads 1 --p-n-reads-learn 800000 --o-table ./dada2_table.qza --o-representative-sequences ./dada2_rep_set.qza --o-denoising-stats ./dada2_stats.qza --verbose
+  287  sbatch dada2.slurm
+  288  ls
+  289  sbatch dada.slurm
+  290  squeue -u ssravanam
+  291  ls
+  292  vi dada.slurm 
+  293  cd ../../..
+  294  cd work/unobioinformatics/ssravanam/
+  295  ls
+  296  cat dad2.out
+  297  cat dada2.out
+  298  cat dada2.err
+  299  vi dad.slurm
+  300  vi dada.slurm
+  301  sbatch dada.slurm
+  302  squeue -u ssravanam
+  303  ls
+  304  cat dada2.out
+  305  vi dada.slurm 
+  306  sbatch dada.slurm
+  307  squeue -u ssravanam
+  308  ls
+  309  ls -al
+  310  sbatch dada.slurm
+  311  ls -al
+  312  vi dada.slurm 
+  313  sbatch dada.slurm
+  314  ls -al
+  315  cat dada1.ot
+  316  cat dada1.out
+  317  squeue -u ssravanam
+  318  cat dada1.err
+  319  vi dada.slurm 
+  320  rm dada1.*
+  321  sbatch dada.slurm
+  322  squeue -u ssravanam
+  323  ls -al
+  324  cat dada1.err
+  325  squeue -u ssravanam
+  326  cd /work/unobioinformatics/ssravanam
+  327  ld
+  328  ls
+  329  cat script1 
+  330  chmod +x script1 
+  331  vi script1 
+  332  ./script1 
+  333  ls -lh /work/unobioinformatics/ssravanam/data/untrimmed_fastq/SRR7142464_1.fastq.gz
+  334  vi script1 
+  335  ls /work/unobioinformatics/ssravanam/data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | sort -u
+  336  vi script1 
+  337  ./script1 
+  338  cd data/untrimmed_fastq/
+  339  ls
+  340  cd ..
+  341  ks
+  342  ls
+  343  vi script1 
+  344  ls
+  345  ls -lh
+  346  vi script1 
+  347  ls /work/unobioinformatics/ssravanam/data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | sort -u
+  348  vi script1 
+  349  ./script1 
+  350  vi script1 
+  351  ls /work/unobioinformatics/ssravanam/data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | sed 's/_.*//' | sort -u
+  352  man wc
+  353  echo "/work/unobioinformatics/ssravanam/data/untrimmed_fastq/SRR7142532" | wc -m
+  354  man cut
+  355  ls /work/unobioinformatics/ssravanam/data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | cut -n 1-66 | sort -u
+  356  ls /work/unobioinformatics/ssravanam/data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | cut 1-66 | sort -u
+  357  ls /work/unobioinformatics/ssravanam/data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | cut -b 1-66 | sort -u
+  358  ls /work/unobioinformatics/ssravanam/data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | cut -b 1-65 | sort -u
+  359  vi script1 
+  360  ./script1 
+  361  ls
+  362  ls data/untrimmed_fastq/
+  363  vi script1 
+  364  ./script1 
+  365  vi script1 
+  366  exit
+  367  cd ../../..
+  368  cd /
+  369  cd~
+  370  cd ~
+  371  cd /
+  372  cd work/unobioinformatics/ssravanam/
+  373  ls
+  374  rm dada1.*
+  375  sbatch dada.slurm
+  376  squeue -u ssravanam
+  377  cat dada1.err
+  378  sbatch dada.slurm
+  379  R --version
+  380  module load linux
+  381  R --v
+  382  module load qiime
+  383  R --version
+  384  module load R
+  385  R --version
+  386  sbatch dada.slurm
+  387  squeue -u ssravanam
+  388  cat dada1.err
+  389  module load R/3.6
+  390  R --version
+  391  for f in $(data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | sort -u); do echo java -jar ./Trimmomatic-0.39/trimmomatic-0.39.jar  PE -phred33 ${f}_1.fastq.gz ${f}_2.fastq.gz ${f}_1_paired.fastq.gz ${f}_1_up.fastq.gz ${f}_2_paired.fastq.gz ${f}_2_up.fastq.gz ILLUMINACLIP:Trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads HEADCROP:5 LEADING:3 TRAILING:3 MINLEN
+  392  for f in $(data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | sort -u); do echo java -jar ./Trimmomatic-0.39/trimmomatic-0.39.jar  PE -phred33 ${f}_1.fastq.gz ${f}_2.fastq.gz ${f}_1_paired.fastq.gz ${f}_1_up.fastq.gz ${f}_2_paired.fastq.gz ${f}_2_up.fastq.gz ILLUMINACLIP:Trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads HEADCROP:5 LEADING:3 TRAILING:3 MINLE
+  393   for f in $(/work/unobioinformatics/ssravanam/data/untrimmed_fastq/*.fastq.gz | sed 's/?_1.fastq.gz//' | sort -u); do echo java -jar /work/unobioinformatics/ssravanam/Trimmomatic-0.39/trimmomatic-0.39.jar  PE -phred33 ${f}_1.fastq.gz ${f}_2.fastq.gz ${f}_1_paired.fastq.gz ${f}_1_up.fastq.gz ${f}_2_paired.fastq.gz ${f}_2_up.fastq.gz ILLUMINACLIP:Trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads HEADCROP:5 LEADING:3 TRAILING:3 MINLEN:36; done
+  394  vim script1
+  395  ls
+  396  ls -al
+  397  vi script1
+  398  ./script1 
+  399  ls
+  400  cd data/untrimmed_fastq/
+  401  ls
+  402  cd ..
+  403  ../../FastQC/.fastqc *_paired.fastq.gz
+  404  cd data/untrimmed_fastq/
+  405  ../../FastQC/.fastqc *_paired.fastq.gz
+  406  cd ../..
+  407  ls
+  408  cd FastQC/
+  409  ls
+  410  ./fastqc SRR9441887.fastq 
+  411  ls -al
+  412  cd ..
+  413  cd data/untrimmed_fastq/
+  414  ../../FastQC/.fastqc *_paired.fastq.gz .
+  415  /../FastQC/.fastqc *_paired.fastq.gz .
+  416  ../../FastQC/.fastqc *_paired.fastq.gz .
+  417  ../../FastQC/*.fastqc *_paired.fastq.gz .
+  418  /../FastQC/fastqc *_paired.fastq.gz .
+  419  /../../FastQC/fastqc *_paired.fastq.gz .
+  420  ../../FastQC/fastqc *_paired.fastq.gz .
+  421  cd /
+  422  cd work/unobioinformatics/ssravanam/
+  423  ls
+  424  module load qiime
+  425  source activate qiime2-2020.2
+  426  export XDG_CONFIG_HOME=$WORK/.config
+  427  sbatch dada.slurm 
+  428  squeue -u ssravanam
+  429  cat dada1.err
+  430  cat dada.out
+  431  cat dada1.out
+  432  ls
+  433  vi dada.slurm 
+  434  sbatch dada.slurm 
+  435  squeue -u ssravanam
+  436  cat dada1.out
+  437  cat dada1.err
+  438  vi dada.slurm 
+  439  sbatch dada.slurm 
+  440  squeue -u ssravanam
+  441  sbatch dada.slurm 
+  442  squeue -u ssravanam
+  443  ls
+  444  cat dada.out
+  445  cat dada.err
+  446  squeue -u ssravanam
+  447  cat dada.err
+  448  vi dada.slurm 
+  449  sbatch dada.slurm 
+  450  squeue -u ssravanam
+  451  vi script1 
+  452  squeue -u ssravanam
+  453  export XDG_CONFIG_HOME=$WORK/.config
+  454  vi dada.slurm 
+  455  squeue -u ssravanam
+  456  cat dada.err
+  457  sbatch dada.slurm 
+  458  squeue -u ssravanam
+  459  cat dada.err
+  460  module load qiime2-2019.10
+  461  source activate qiime2-2019.10
+  462  module load qiime2/2019.10
+  463  vi dada.slurm 
+  464  module load qiime2/2019.10
+  465  sbatch dada.slurm 
+  466  squeue -u ssravanam
+  467  cat dada.err
+  468  vi dada.slurm 
+  469  qiime info
+  470  module load QIIME2/2019.10.0
+  471  module load qiime2/2019.10.0
+  472  module load qiime2/2019.10
+  473  vi dada.slurm 
+  474  qiime dada2 denoised paired --help
+  475  vi dada.slurm 
+  476  qiime dada2 denoise-aired --help
+  477  qiime dada2 denoise-paired --help
+  478  vi dada.slurm 
+  479  sbatch dada.slurm 
+  480  squeue -u ssravanam
+  481  cat dada.err
+  482  vi dada.slurm 
+  483  sbatch dada.slurm 
+  484  squeue -u ssravanam
+  485  cat dada.err
+  486  qstat -u ssravanam
+  487  cd $WORK
+  488  more dada3.out 
+  489  more dada3.err 
+  490  more dada2.out 
+  491  more dada2.err 
+  492  more dada.slurm 
+  493  qstat -u ssravanam
+  494  more dada.slurm 
+  495  qstat -u ssravanam
+  496  more dada3.err 
+  497  more dada3.out 
+  498  qstat -u ssravanam
+  499  more dada.slurm 
+  500  watch -n 0.3 dada4.*
+  501  watch -n 0.3 more dada4.*
+  502  qstat -u ssravanam
+  503  watch -n 0.3 more dada4.*
+  504  qstat -u ssravanam
+  505  more dada4.*
+  506  cd /
+  507  cd work/unobioinformatics/ssravanam/
+  508  ls
+  509  vi dada.slurm 
+  510  sbatch dada.slurm 
+  511  squeue -u ssravanam
+  512  cat dada3.out
+  513  squeue -u ssravanam
+  514  cat dada3.out
+  515  R info
+  516  cat dada3.out
+  517  squeue -u ssravanam
+  518  cat dada3.out
+  519  squeue -u ssravanam
+  520  cat dada3.out
+  521  squeue -u ssravanam
+  522  cat dada3.err
+  523  vi dada.slurm 
+  524  sbatch dada.slurm 
+  525  squeue -u ssravanam
+  526  cat dada4.out
+  527  cat dada4.out
+  528  squeue -u ssravanam
+  529  cat dada4.out
+  530  squeue -u ssravanam
+  531  cat dada4.out
+  532  squeue -u ssravanam
+  533  cat dada4.out
+  534  ls -al
+  535  cat dada4.err
+  536  cat dada4.out
+  537  squeue -u ssravanam
+  538  cat dada4.out
+  539  squeue -u ssravanam
+  540  cat dada4.out
+  541  squeue -u ssravanam
+  542  cat dada4.out
+  543  squeue -u ssravanam
+  544  cat dada4.out
+  545  squeue -u ssravanam
+  546  cat dada4.out
+  547  squeue -u ssravanam
+  548  cat dada4.out
+  549  squeue -u ssravanam
+  550  cat dada4.out
+  551  squeue -u ssravanam
+  552  cat dada4.out
+  553  squeue -u ssravanam
+  554  cat dada4.out
+  555  cat dada4.err
+  556  cat dada4.out
+  557  squeue -u ssravanam
+  558  cat dada4.out
+  559  squeue -u ssravanam
+  560  cat dada4.out
+  561  squeue -u ssravanam
+  562  vi dada.slurm 
+  563  cat dada4.out
+  564  squeue -u ssravanam
+  565  cat dada4.out
+  566  squeue -u ssravanam
+  567  cat dada4.out
+  568  squeue -u ssravanam
+  569  cat dada4.out
+  570  squeue -u ssravanam
+  571  cat dada4.out
+  572  ls
+  573  cat dada4.out
+  574  squeue -u ssravanam
+  575  cat dada4.out
+  576  cd /
+  577  cd work/unobioinformatics/ssravanam/
+  578  ls
+  579  squeue -u ssravanam
+  580  cat dada4.err
+  581  module loda qiime2/2019.10
+  582  qiime metadata tabulate --m-input-file ./dada2_stats.qza  --o-visualization ./dada2_stats.qzv
+  583  qiime feature-table tabulate-seqs --i-data dada2_set.gza --o-visualization rep-seqs.qzv
+  584  ls
+  585  qiime feature-table tabulate-seqs --i-data dada2_rep_set.gza --o-visualization rep-seqs.qzv
+  586  ls
+  587  qiime feature-table tabulate-seqs --i-data dada2_rep_set.qza --o-visualization rep-seqs.qzv
+  588  qiime feature-table summarize --h
+  589  qiime feature-table summarize --help
+  590  cd /
+  591  cd work/unobioinformatics/ssravanam/
+  592  ls
+  593  ls -sl
+  594  ls -al
+  595  ls
+  596  vi dada.slurm
+  597  mkdir dada2
+  598  vi dada.slurm
+  599  sbatch dada.slurm
+  600  squeue -u ssravanam
+  601  ls
+  602  dada2
+  603  cd dada2
+  604  ls
+  605  cat dad2.err
+  606  cat dada2.err
+  607  squeue -u ssravanam
+  608  ls
+  609  cd ..
+  610  ls 
+  611  ls -al
+  612  mv dada2_stats.qza denoising-stats.qza
+  613  ls
+  614  squeue -u ssravanam
+  615  wget   -O "sample-metadata.tsv"   "https://data.qiime2.org/2020.2/tutorials/atacama-soils/sample_metadata.tsv"
+  616  ls
+  617  cat sample-metadata.tsv 
+  618  squeue -u ssravanam
+  619  cat mymetadata.txt 
+  620  cat sample-metadata.tsv 
+  621  cat mymetadata.txt 
+  622  qiime feature-table summarize --i-table table.qza --o-visualization table.qza --m-sample-metadata-file mymetadata.txt
+  623  module load qiime2/2019.10
+  624  qiime feature-table summarize --i-table table.qza --o-visualization table.qza --m-sample-metadata-file mymetadata.txt
+  625  vi sample-metadata.tsv 
+  626  vi  mymetadata.txt 
+  627  qiime feature-table summarize --i-table table.qza --o-visualization table.qza --m-sample-metadata-file mymetadata.txt
+  628  vi  mymetadata.txt 
+  629  qiime feature-table summarize --i-table table.qza --o-visualization table.qza --m-sample-metadata-file mymetadata.txt
+  630  qiime phylogeny align-to-tree-mafft-fasttree --i-sequence rep-seqs.qza --o-alignment aligned-rep-seqs.qza --o-masked-alignment masked-aligned-rep-seqs.qza --o-tree unrooted-tree.qza --o-rooted-tree rooted-tree.qza
+  631  qiime phylogeny align-to-tree-mafft-fasttree --i-sequences rep-seqs.qza --o-alignment aligned-rep-seqs.qza --o-masked-alignment masked-aligned-rep-seqs.qza --o-tree unrooted-tree.qza --o-rooted-tree rooted-tree.qza
+  632  qiime diversity core-metrics-phylogenetic --help
+  633  squeue -u ssravanam
+  634  qiime diversity core-metrics-phylogenetic --help
+  635  squeue -u ssravanam
+  636  ls
+  637  cd dada2
+  638  ls
+  639  cat dada2.err
+  640  cat dada2.out
+  641  cd ..
+  642  ls
+  643  qiime diversity c
+  644  qiime diversity core-metrics-phylogenetic   --i-phylogeny rooted-tree.qza   --i-table table.qza   --p-sampling-depth 1103   --m-metadata-file sample-metadata.tsv \
+  645  qiime diversity core-metrics-phylogenetic --i-iphylogeny rooted-tree.qza --i-table table.qza --p-sampling-depth 4900 --m-metadata-file mymetadata.txt --output-dir core-metrics-results
+  646  qiime diversity core-metrics-phylogenetic --i-phylogeny rooted-tree.qza --i-table table.qza --p-sampling-depth 4900 --m-metadata-file mymetadata.txt --output-dir core-metrics-results
+  647  ls
+  648  cd core-metrics-results/
+  649  ls
+  650  cd ..
+  651  qiime diversity alpha-group-significance --i-alpha-diversity core-metrics-results/faith_pd_vector.qza --m-metadata-file mymetadata.txt --o-visualization core-metrics-results/faith-pd-group-significance.qzv
+  652  qiime diversity alpha-group-significance --i-alpha-diversity core-metrics-results/evenness_vector.qza --m-metadata-file mymetadata.txt --o-visualization core-metrics-results/evenness-group-significance.qzv
+  653  qiime diversity beta-group-significance --i-distance-matrix core-metrics-results/unweighted_unifrac_distance_matrix.qza --m-metadata-file mymetadata.txt --m-metadata-column Sample type --o-visualization core-metrics-results/unweighted_unifrac-subject-group-significance.qzv --p-pairwise
+  654  cat mymetadata.txt 
+  655  qiime diversity beta-group-significance --i-distance-matrix core-metrics-results/unweighted_unifrac_distance_matrix.qza --m-metadata-file mymetadata.txt --m-metadata-column Sampletype --o-visualization core-metrics-results/unweighted_unifrac-subject-group-significance.qzv --p-pairwise
+  656  qiime diversity beta-group-significance --i-distance-matrix core-metrics-results/unweighted_unifrac_distance_matrix.qza --m-metadata-file mymetadata.txt --m-metadata-column Donor status --o-visualization core-metrics-results/unweighted_unifrac-subject-group-significance.qzv --p-pairwise
+  657  qiime diversity beta-group-significance --i-distance-matrix core-metrics-results/unweighted_unifrac_distance_matrix.qza --m-metadata-file mymetadata.txt --m-metadata-column Donorstatus --o-visualization core-metrics-results/unweighted_unifrac-subject-group-significance.qzv --p-pairwise
+  658  qiime diversity beta-group-significance --i-distance-matrix core-metrics-results/unweighted_unifrac_distance_matrix.qza --m-metadata-file mymetadata.txt --m-metadata-column Donor --o-visualization core-metrics-results/unweighted_unifrac-subject-group-significance.qzv --p-pairwise
+  659  vi mymetadata.txt 
+  660  qiime diversity beta-group-significance --i-distance-matrix core-metrics-results/unweighted_unifrac_distance_matrix.qza --m-metadata-file mymetadata.txt --m-metadata-column Donor-status --o-visualization core-metrics-results/unweighted_unifrac-subject-group-significance.qzv --p-pairwise
+  661  qiime diversity alpha-group-significance --i-alpha-diversity core-metrics-results/faith_pd_vector.qza --m-metadata-file mymetadata.txt --o-visualization core-metrics-results/faith-pd-group-significance.qzv
+  662  qiime diversity alpha-group-significance --i-alpha-diversity core-metrics-results/evenness_vector.qza --m-metadata-file mymetadata.txt --o-visualization core-metrics-results/evenness-group-significance.qzv
+  663  qiime diversity beta-group-significance --i-distance-matrix core-metrics-results/unweighted_unifrac_distance_matrix.qza --m-metadata-file mymetadata.txt --m-metadata-column Donor-status --o-visualization core-metrics-results/unweighted_unifrac-subject-group-significance.qzv --p-pairwise
+  664  cd /
+  665  cd work/unobioinformatics/ssravanam/
+  666  ls
+  667  cd core-metrics-results/
+  668  ls
+  669  cd /
+  670  cd work/unobioinformatics/ssravanam/
+  671  ls
+  672  ls -al
+  673  cd dada2
+  674  ls
+  675  cd data
+  676  cd ..
+  677  cd data
+  678  ls
+  679  cd untrimmed_fastq/
+  680  ls
+  681  cd ..
+  682  ls
+  683  ls -al
+  684  vi script1 
+  685  cd data/untrimmed_fastq/
+  686  ls
+  687  cp ..
+  688  cd ..
+  689  ls
+  690  mkdir trimmed_fastq
+  691  mkdir fastqc_trimmed_reads
+  692  ls
+  693  cp SRR*_1_paired.fastq.gz SRR*_1_up.fastq.gz ./trimmed_fastq/
+  694  cp *fastqc.* ./fastqc_trimmed_reads/
+  695  mv SRR*_1_paired.fastq.gz SRR*_1_up.fastq.gz ./trimmed_fastq/
+  696  cp ./untrimmed_fastq/ SRR*_1_paired.fastq.gz SRR*_1_up.fastq.gz ./trimmed_fastq/
+  697  cp ./untrimmed_fastq/SRR*_1_paired.fastq.gz SRR*_1_up.fastq.gz ./trimmed_fastq/
+  698  cd trimmed_fastq/
+  699  ls
+  700  cp ./untrimmed_fastq/SRR*_2_paired.fastq.gz SRR*_2_up.fastq.gz ./trimmed_fastq/
+  701  cd ..
+  702  cp ./untrimmed_fastq/SRR*_2_paired.fastq.gz SRR*_2_up.fastq.gz ./trimmed_fastq/
+  703  cd trimmed_fastq/
+  704  ls
+  705  cd ..
+  706  cd untrimmed_fastq/
+  707  ls
+  708  cd ..
+  709  mv ./untrimmed_fastq/*fastqc.* ./fastqc_trimmed_reads/
+  710  cd untrimmed_fastq/
+  711  ls
+  712  cd ..
+  713  cd fastqc_trimmed_reads/
+  714  ls
+  715  cd ..
+  716  ls
+  717  cp ../script1 ./
+  718  ls
+  719  cd script1 
+  720  ls
+  721  cat script1 
+  722  cd ..
+  723  cd example/
+  724  ls
+  725  cp mymanifest.txt ../data/
+  726  ls
+  727  cd ../data
+  728  ls
+  729  vi mymanifest.txt 
+  730  cp ../mymetadata.txt .
+  731  ls
+  732  cat mymetadata.txt 
+  733  ls
+  734  cd ../example/
+  735  ls
+  736  cd pe-64-manifest 
+  737  cd pe-64
+  738  ls
+  739  cd ..
+  740  ls
+  741  cd ..
+  742  cd ssravanam/
+  743  cd /
+  744  cd work/unobioinformatics/ssravanam/
+  745  ls
+  746  cd data
+  747  module load qiime2/2019.10
+  748  join_paired?_ends.py -f work/unobioinformatics/ssravanam/data/tri
+  749  cd trimmed_fastq/
+  750  ls
+  751  cd ..
+  752  mkdir paired
+  753  join_paired?_ends.py -f work/unobioinformatics/ssravanam/data/trimmed_fastq/*_1_paired.fastq.gz -r work/unobioinformatics/ssravanam/data/trimmed_fastq/*_2_paired.fastq.gz -o paired -j 30 -p 10
+  754  module load qiime2/2019.10
+  755  join_paired?_ends.py -f work/unobioinformatics/ssravanam/data/trimmed_fastq/*_1_paired.fastq.gz -r work/unobioinformatics/ssravanam/data/trimmed_fastq/*_2_paired.fastq.gz -o paired -j 30 -p 10
+  756  source activate qiime2.2019.10
+  757  qiime info
+  758  module load Python/3.6.7
+  759  source activate qiime2/2020.2
+  760  cd ..
+  761  ls
+  762  source activate qiime2-2020.2
+  763  source activate qiime2-2019.10
+  764  join_paired?_ends.py -f work/unobioinformatics/ssravanam/data/trimmed_fastq/*_1_paired.fastq.gz -r work/unobioinformatics/ssravanam/data/trimmed_fastq/*_2_paired.fastq.gz -o paired -j 30 -p 10
+  765  module load qiime2/2019.10
+  766  join_paired?_ends.py -f work/unobioinformatics/ssravanam/data/trimmed_fastq/*_1_paired.fastq.gz -r work/unobioinformatics/ssravanam/data/trimmed_fastq/*_2_paired.fastq.gz -o paired -j 30 -p 10
+  767  module load qiime/2.0
+  768  join_paired?_ends.py -f work/unobioinformatics/ssravanam/data/trimmed_fastq/*_1_paired.fastq.gz -r work/unobioinformatics/ssravanam/data/trimmed_fastq/*_2_paired.fastq.gz -o paired -j 30 -p 10
+  769  ls
+  770  cd example/
+  771  LS
+  772  ls
+  773  cd ..
+  774  qiime vserach cluster-featues-closed-reference --help
+  775  qiime vsearch cluster-featues-closed-reference --help
+  776  qiime vsearch cluster-featues-closed-reference --h
+  777  qiime vsearch cluster-features-closed-reference --help
+  778  wget   -O "85_otus.qza"   "https://data.qiime2.org/2020.2/tutorials/otu-clustering/85_otus.qza"
+  779  ls
+  780  cat 85_otus.qza 
+  781  ls
+  782  wget   -O "85_otus.qza"   "https://data.qiime2.org/2020.2/tutorials/otu-clustering/97_otus.qza"
+  783  qiime vsearch cluster-features-closed-reference   --i-table table.qza   --i-sequences rep-seqs.qza   --i-reference-sequences 85_otus.qza   --p-perc-identity 0.85   --o-clustered-table table-cr-85.qza   --o-clustered-sequences rep-seqs-cr-85.qza \
+  784  qiime vsearch cluster-features-closed-reference   --i-table table.qza   --i-sequences rep-seqs.qza     --p-perc-identity 0.97   --o-clustered-table table-cr-85.qza   --o-clustered-sequences rep-seqs-cr-85.qza 
+  785  qiime vsearch cluster-features-closed-reference   --i-table table.qza   --i-sequences rep-seqs.qza     --p-perc-identity 0.97   --o-clustered-table table-cr-85.qza  
+  786  qiime vsearch cluster-features-closed-reference   --i-table table.qza   --i-sequences rep-seqs.qza     --p-perc-identity 0.97   --o-clustered-table table-cr-85.qza   --o-clustered-sequences rep-seqs-cr-85.qza --o-unmatched-sequences unmatched-cr-97.qza
+  787  qiime vsearch cluster-features-closed-reference   --i-table table.qza   --i-sequences rep-seqs.qza     --p-perc-identity 0.97   --o-clustered-table table-cr-85.qza  --o-unmatched-sequences unmatched-cr-97.qza
+  788  ls
+  789  rm 85_otus.qza 
+  790  cd core-metrics-results/
+  791  ls
+  792  cd ..
+  793  qiime diversity alpha-rarefaction --i-table table.qza --i-phylogeny rooted-tree.qza --p-max-depth 4900 --m-metadata-file mymetadata.txt  --o-visualization alpha-rarefaction.qzv
+  794  source deactivate
+  795  module load qiime2/2019.10
+  796  qiime diversity alpha-rarefaction --i-table table.qza --i-phylogeny rooted-tree.qza --p-max-depth 4900 --m-metadata-file mymetadata.txt  --o-visualization alpha-rarefaction.qzv
+  797  wget   -O "gg-13-8-99-515-806-nb-classifier.qza"   "https://data.qiime2.org/2020.2/common/gg-13-8-99-515-806-nb-classifier.qza"
+  798  wget   -O "gg-13-8-97-515-806-nb-classifier.qza"   "https://data.qiime2.org/2020.2/common/gg-13-8-97-515-806-nb-classifier.qza"
+  799  qiime feature-classifier classify-sklearn   --i-classifier gg-13-8-99-515-806-nb-classifier.qza   --i-reads rep-seqs.qza   --o-classification taxonomy.qza
+  800  qiime metadata tabulate   --m-input-file taxonomy.qza   --o-visualization taxonomy.qzv
+  801  module load qiime2/2020.2
+  802  source activate qiime2/2020.2
+  803  source activate qiime2-2020.2
+  804  wget   -O "gg-13-8-97-515-806-nb-classifier.qza"   "https://data.qiime2.org/2020.2/common/gg-13-8-97-515-806-nb-classifier.qza"
+  805  wget   -O "gg-13-8-99-515-806-nb-classifier.qza"   "https://data.qiime2.org/2020.2/common/gg-13-8-99-515-806-nb-classifier.qza"
+  806  qiime feature-classifier classify-sklearn   --i-classifier gg-13-8-99-515-806-nb-classifier.qza   --i-reads rep-seqs.qza   --o-classification taxonomy.qza
+  807  qiime metadata tabulate   --m-input-file taxonomy.qza   --o-visualization taxonomy.qzv
+  808  qiime taxa barplot --i-table table.qza --m-metadata-file mymetadata.txt --o-visualization taxa-bar-plots.qzv
+  809  ls
+  810  qiime taxa barplot --i-table table.qza --i-taxonomy taxonomy.qza --m-metadata-file mymetadata.txt --o-visualization taxa-bar-plots.qzv
+  811  qiime feature-table filter-samples   --i-table table.qza   --p-min-frequency 1500   --o-filtered-table sample-frequency-filtered-table.qza
+  812  qiime feature-table filter-features   --i-table table.qza   --p-min-frequency 10   --o-filtered-table feature-frequency-filtered-table.qza
+  813  qiime feature-table filter-samples   --i-table table.qza   --p-min-frequency 1500   --o-filtered-table sample-frequency-filtered-table.qza
+  814  qiime feature-table filter-samples   --i-table feature-frequency-filtered-table.qza   --p-min-frequency 1500   --o-filtered-table table1.qza
+  815  qiime feature-table filter-features   --i-table table1.qza   --p-min-samples 2 \
+  816  qiime feature-table filter-features --i-table table1.qza --p-min-samples 2 --o-filtered-table table2.qza 
+  817  qiime feature-table filter-features --i-table table2.qza --p-min-features 10 --o-filtered-table table3.qza 
+  818  qiime feature-table filter-features --i-table table2.qza --p-min-frequency 10 --o-filtered-table table3.qza 
+  819  qiime taxa filter-table --i-table table3.qza --i-taxonomy taxonomy.qza --p-exclude mitochondria --o-filtered-table table-no-mitochondria.qza
+  820  qiime taxa filter-table --i-table table3.qza --i-taxonomy taxonomy.qza --p-exclude mitochondria,chloroplast --o-filtered-table table-no-mitochondria-no-choroplast.qza
+  821  qiime taxa filter-table --i-table table3.qza --i-taxonomy taxonomy.qza --p-include p_ --p-exclude mitochondria,chloroplast --o-filtered-table table-no-mitochondria-no-choroplast.qza
+  822  qiime taxa filter-seqs   --i-sequences sequences.qza   --i-taxonomy taxonomy.qza   --p-include p__   --p-exclude mitochondria,chloroplast   --o-filtered-sequences sequences-with-phyla-no-mitochondria-no-chloroplast.qza
+  823  qiime taxa barplot   --i-table table.qza   --i-taxonomy taxonomy.qza   --m-metadata-file sample-metadata.tsv   ---visualization taxa-bar-plots.qzv
+  824  qiime taxa barplot   --i-table table-no-mitochondria-no-choroplast.qza   --i-taxonomy taxonomy.qza   --m-metadata-file mymetadata.txt   --o-visualization taxa-bar-plots1.qzv
+  825  qiime composition ancom   --i-table comp-gut-table.qza   --m-metadata-file sample-metadata.tsv   --m-metadata-column subject   ---visualization ancom-subject.qzv
+  826  qiime composition ancom   --i-table table-no-mitochondria-no-choroplast.qza --m-metadata-file mymetadata.txt   --m-metadata-column subject   ---visualization ancom-subject.qzv
+  827  qiime composition ancom   --i-table table-no-mitochondria-no-choroplast.qza --m-metadata-file mymetadata.txt   --m-metadata-column subject   --o-visualization ancom-subject.qzv
+  828  qiime composition ancom   --i-table table-no-mitochondria-no-choroplast.qza --m-metadata-file mymetadata.txt   --m-metadata-column Donor-status   --o-visualization ancom-subject.qzv
+  829  qiime composition ancom --help
+  830  qiime feature-table filter-samples --help
+  831  qiime feature-table filter-samples --i-table table-no-mitochondria-no-choroplast.qza --m-metadata-file mymetadata.txt --p-max-features 50 --o-filtered-table gtable.qza
+  832  qiime composition add-pseudocount   --i-table gut-table.qza   ---composition-table comp-gut-table.qza
+  833  qiime composition add-pseudocount   --i-table gtable.qza   --o-composition-table comp-gtable.qza
+  834  qiime composition ancom   --i-table comp-gut-table.qza   --m-metadata-file sample-metadata.tsv   --m-metadata-column subject   ---visualization ancom-subject.qzv
+  835  qiime composition ancom   --i-table comp-gtable.qza   --m-metadata-file mymetadata.txt   --m-metadata-column Donor-status  --o-visualization ancom-subject.qzv
+  836  ls
+  837  cd core-metrics-results/
+  838  ls
+  839  R
+  840  cd /
+  841  cd work/unobioinformatics/ssravanam/
+  842  ls
+  843  conda create -n qiime1 python=2.7 qiime matplotlib=1.4.3 mock nose -c bioconda
+  844  module load conda
+  845  source activate qiime1
+  846  source activate miniconda
+  847  conda install numpy
+  848  conda install command
+  849  conda update conda
+  850  miniconda --help
+  851  qiime info
+  852  qiime1 info
+  853  module load qiime1
+  854  ls
+  855  python --version
+  856  pip install numpy
+  857  python
+  858  module load anaconda
+  859  module load qiime1
+  860  conda create -n qiime1 python=2.7 qiime matplotlib=1.4.3 mock nose -c bioconda
+  861  conda activate qiime1
+  862  print_qiime_config.py -t
+  863  source activate qiime1
+  864  qiime1 info
+  865  cd /
+  866  cd work/unobioinformatics/ssravanam/
+  867  ls
+  868  cd example/
+  869  cd ..
+  870  cd ssravanam/
+  871  qiime dada2 denoise-paired --help
+  872  module load qiime2/2019.10
+  873  qiime dada2 denoise-paired --help
+  874  ls
+  875  cd data
+  876  ls
+  877  cd ..
+  878  cd dada2
+  879  ls
+  880  cd ..
+  881  cd data
+  882  ls
+  883  cd ..
+  884  cd example/
+  885  ls
+  886  ls -al
+  887  cd ..
+  888  cd data
+  889  ls
+  890  vi mymanifest.txt 
+  891  cd trimmed_fastq/
+  892  ls
+  893  cd ..
+  894  vi mymanifest.txt 
+  895  qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' input-path mymanifest.txt  --output-path paired-end-demux.qza --input-format PairedEndFastManifestPhred33V2
+  896  qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path mymanifest.txt  --output-path paired-end-demux.qza --input-format PairedEndFastManifestPhred33V2
+  897  qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path mymanifest.txt  --output-path paired-end-demux.qza --input-format PairedEndFastqManifestPhred33V2
+  898  ls
+  899  cd trimmed_fastq/
+  900  ls
+  901  qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path mymanifest.txt  --output-path paired-end-demux.qza --input-format PairedEndFastqManifestPhred33V2
+  902  qiime demux --help
+  903  cd ..
+  904  qiime dada2 -help
+  905  qiime dada2 --help
+  906  qiime demux --help
+  907  qiime demux filter-samples --help
+  908  qiime dada2 denoise-paired --help
+  909  cd ddad2
+  910  cd dada2
+  911  ls
+  912  cd ..
+  913  ls
+  914  cd ..
+  915  cd example/
+  916  ls
+  917  cp ./dada.slurm ../data/
+  918  cd ..
+  919  cd dat
+  920  cd data
+  921  ls
+  922  vi dada.slurm 
+  923  ls
+  924  cd ..
+  925  ls
+  926  qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path mymanifest.txt  --output-path ./paired-end-demux.qza --input-format PairedEndFastqManifestPhred33V2
+  927  cd data
+  928  qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path mymanifest.txt  --output-path ./paired-end-demux.qza --input-format PairedEndFastqManifestPhred33V2
+  929  ls
+  930  vi dada.slurm 
+  931  vi script1 
+  932  vi dada.slurm 
+  933  sbatch dada.slurm 
+  934  ssqueue -u ssravanam
+  935  squeue -u ssravanam
+  936  cd dada2
+  937  cat dada2.err
+  938  cd ..
+  939  vi dada.slurm 
+  940  sbatch dada.slurm 
+  941  squeue -u ssravanam
+  942  cd dada2
+  943  cat dada2.err
+  944  cd ..
+  945  squeue -u ssravanam
+  946  cd dada2
+  947  cat dada2.err
+  948  cat dada2.out
+  949  cd ..
+  950  squeue -u ssravanam
+  951  cd dada2
+  952  cat dada2.out
+  953  cd ..
+  954  squeue -u ssravanam
+  955  picrust --help
+  956  PICRUSt --help
+  957  PICRUSt
+  958  squeue -u ssravanam
+  959  cd dada2
+  960  cat dada2.out
+  961  cd ..
+  962  cd dada2
+  963  ls
+  964  cd ..
+  965  squeue -u ssravanam
+  966  cd dada2
+  967  ls
+  968  cd dada2.out
+  969  cat dada2.out
+  970  cd ..
+  971  cd data
+  972  cd dada2
+  973  ls
+  974  cd ..
+  975  cat dada.slurm 
+  976  cd dada2
+  977  mv dada2_table.qza table.qza
+  978  ls
+  979  mv dada2_stats.qza denoising-stats.qza
+  980  ls
+  981  mv dada2_rep_set.qza rep-seqs.qza
+  982  cd ..
+  983  vi dada.slurm 
+  984  qiime feature-table summarize module load qiime2/2019.10
+  985  module load qiime2/2019.10
+  986  qiime feature-table summarize qiime feature-table summarize --i-table table.qza
+  987  qiime feature-table summarize qiime feature-table summarize --i-table table.qza --o-visualization table.qzv --m-sample-metadata-file mymetadata.txt 
+  988  cp dada2/table.qza .
+  989  cp dada2/rep-seqs.qza .
+  990  cp dada2/denoising-stats.qza .
+  991  ls
+  992  qiime feature-table summarize qiime feature-table summarize --i-table table.qza --o-visualization table.qzv --m-sample-metadata-file mymetadata.txt 
+  993  qiime feature-table summarize --i-table table.qza --o-visualization table.qzv --m-sample-metadata-file mymetadata.txt 
+  994  vi mymetadata.txt 
+  995  qiime feature-table summarize --i-table table.qza --o-visualization table.qzv --m-sample-metadata-file mymetadata.txt 
+  996  qiime feature-table tabulate-seqs --i-data rep-seqs.qza --o-visualization rep-seqs.qzv
+  997  qiime metadata tabulate --m-input-file denoising-stats.qza --o-visualization denoising-stats.qzv
+  998  ls
+  999  cd ..
+ 1000  cd /
+ 1001  cd work/unobioinformatics/ssravanam/
+ 1002  ls
+ 1003  cd data
+ 1004  ls
+ 1005  module load qiime2/2019.10
+ 1006  ls
+ 1007  qiime vsearch cluster-features-closed-refernce --i-table table.qza --i-sequences rep-seqs.qza --i-reference-sequences
+ 1008  ls
+ 1009  tar -xvf gg_13_8_otus.tar.gz 
+ 1010  ls
+ 1011  cd gg_13_8_otus
+ 1012  ls
+ 1013  cd ..
+ 1014  ls
+ 1015  cd gg_13_8_otus
+ 1016  ls
+ 1017  cd otus/
+ 1018  ls
+ 1019  cd ..
+ 1020  ls
+ 1021  cd rep_set
+ 1022  ls
+ 1023  cd ..
+ 1024  la
+ 1025  ls
+ 1026  qiime vsearch cluster-features-closed-reference --i-table table.qza qiime vsearch cluster-features-closed-reference --i-table table.qza --i-sequences rep-seqs.qza --i-reference-sequences gg-13-8-99-nb-classifier.qza --p-perc-identity 0.99 --o-clustered-table table-cr-99.qza --o-clustered-sequences rep-seqs-cr-99.qza --o-unmatched-sequences unmatched-cr-99.qza
+ 1027  qiime vsearch cluster-features-closed-reference --i-table table.qza --i-sequences rep-seqs.qza --i-reference-sequences gg-13-8-99-nb-classifier.qza --p-perc-identity 0.99 --o-clustered-table table-cr-99.qza --o-clustered-sequences rep-seqs-cr-99.qza --o-unmatched-sequences unmatched-cr-99.qza
+ 1028  cd gg_13_8_otus
+ 1029  ls
+ 1030  cd otus/
+ 1031  ls
+ 1032  cd ..
+ 1033  cd rep_set
+ 1034  ls
+ 1035  cd ..
+ 1036  cd rep_set_aligned/
+ 1037  ls
+ 1038  cd ..
+ 1039  cd taxonomy/
+ 1040  ls
+ 1041  cd ..
+ 1042  cd gg_13_8_otus
+ 1043  ls
+ 1044  cd rep_set
+ 1045  ls
+ 1046  cd ..
+ 1047  cd rep_set_aligned/
+ 1048  ls
+ 1049  cd ..
+ 1050  qiime tools import --type 'FeatureData[Sequence]' --input-path ./gg_13_8_otus/rep_set_aligned/97_otus.fasta --output-path 97_otus.qza
+ 1051  qiime tools import --type 'FeatureData[Sequence]' --input-path gg_13_8_otus/rep_set_aligned/97_otus.fasta --output-path 97_otus.qza
+ 1052  qiime tools import --type 'FeatureData[Sequence]' --input-path gg_13_8_otus/rep_set/97_otus.fasta --output-path 97_otus.qza
+ 1053  qiime vsearch cluster-features-closed-reference --i-table table.qza --i-sequences rep-seqs.qza --i-reference-sequence 97_otus.qza --p-perc-identity 0.97 --o-clustered-table table-cr-97.qza --o-clustered-sequences rep-seqs-cr-97.qza --o-unmatched-sequences unmatched-cr-97.qza
+ 1054  qiime vsearch cluster-features-closed-reference --i-table table.qza --i-sequences rep-seqs.qza --i-reference-sequences 97_otus.qza --p-perc-identity 0.97 --o-clustered-table table-cr-97.qza --o-clustered-sequences rep-seqs-cr-97.qza --o-unmatched-sequences unmatched-cr-97.qza
+ 1055  ls
+ 1056  qiime tools import --type 'FeatureData[Sequence]' --input-path gg_13_8_otus/rep_set/99_otus.fasta --output-path 99_otus.qza
+ 1057  qiime vsearch cluster-features-closed-reference --i-table table.qza --i-sequences rep-seqs.qza --i-reference-sequences 99_otus.qza --p-perc-identity 0.99 --o-clustered-table table-cr-99.qza --o-clustered-sequences rep-seqs-cr-99.qza --o-unmatched-sequences unmatched-cr-99.qza
+ 1058  ls
+ 1059  qiime feature-ture-table filter-features --i-table table.qza --p-min-samples 1 --o-filtered-table contingency-filtered-table.qza
+ 1060  qiime feature-table filter-features --i-table table.qza --p-min-samples 1 --o-filtered-table contingency-filtered-table.qza
+ 1061  qiime vsearch uchime-denovp --i-table contingency-filtered-table.qza --i-sequences rep-seqs.qza --output-dir uchimedenovo-outputs
+ 1062  qiime vsearch uchime-denovo --i-table contingency-filtered-table.qza --i-sequences rep-seqs.qza --output-dir uchimedenovo-outputs
+ 1063  qiime vsearch uchime-denovo --help
+ 1064  qiime metadat tabulate --m-input-file uchimedenovo-outputs/stats.qza --o-visualization uchimedenovo-stats.qzv
+ 1065  qiime metadata tabulate --m-input-file uchimedenovo-outputs/stats.qza --o-visualization uchimedenovo-stats.qzv
+ 1066  cd uchimedenovo-outputs/
+ 1067  ls
+ 1068  cd ..
+ 1069  qiime vsearch uchime-denovo --help
+ 1070  ls
+ 1071  qiime vsearch uchime-denovo --help
+ 1072  cd uchimedenovo-outputs/
+ 1073  ls
+ 1074  cd ..
+ 1075  cp uchimedenovo-outputs/nonchimeras.qza ./
+ 1076  ls
+ 1077  ls -al
+ 1078  mv nonchimeras.qza nonchimeras-seqs-rep.qza
+ 1079  qiime feature-classifier classify-sklearn --i-classifier gg-13-8-99-nb-classifier.qza --i-reads nonchimeras-seqs-rep.qza --o-classification taxonomy.qza
+ 1080  source activate qiime2-2020.2
+ 1081  qiime feature-classifier classify-sklearn --i-classifier gg-13-8-99-nb-classifier.qza --i-reads nonchimeras-seqs-rep.qza --o-classification taxonomy.qza
+ 1082  source deactivate qiime2-2020.2
+ 1083  module load qiime/2019.10
+ 1084  module load qiime2/2019.10
+ 1085  qiime metadata tabulate --m-input-file taxonomy.qza --o-visualization taxonomy.qzv
+ 1086  ls
+ 1087* qiime taxa barplot --i-table table.qza --i-taxonomy taxonomy.qza --m-metadata-file mymetadata.txt --o-visualization taxonomy-barplots.qzv
+ 1088  qiime vsearch uchime-denovo --help
+ 1089  history > history.txt

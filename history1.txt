@@ -1,0 +1,1000 @@
+    7  qiime composition ancom --help
+    8  qiime composition add-pseudocount --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --o-composition-table comp-table.qza
+    9  qiime composition ancom --i-table comp-table.qza --m-metadata-file mymetadata.txt --m-metadata-column Donor-status --o-visualization ancom-Donor-status.qzv
+   10  qiime tools export --input-path table-with-k-no-mitochondria-n0-chloroplast.qza --output-path exported-feature-table
+   11  cd core-metrics-results/
+   12  ls
+   13  cd ..
+   14  ls
+   15  cd /
+   16  cd work/unobioinformatics/ssra
+   17  ls
+   18  git init
+   19  cd work/unobioinformatics/ssravanam/
+   20  git init
+   21  git add .
+   22  cd /
+   23  cd work/unobioinformatics/ssravanam/
+   24  git add ./Data/
+   25  git init
+   26  git add ./Data/
+   27  git add ./data/
+   28  git remote add origin https://github.com/ssravanam/sruthi-project.git
+   29  git add ./data/
+   30  git commit -m "First commit"
+   31  git remote add origin remote https://github.com/ssravanam/sruthi-project.git
+   32  git remote add remote https://github.com/ssravanam/sruthi-project.git
+   33  cd /
+   34  cd work/unobioinformatics/ssravanam/
+   35  ls
+   36  cd /work/unobioinformatics/ssravanam/
+   37  ls
+   38  cd /work/unobioinformatics/ssravanam/
+   39  ls
+   40  cd data
+   41  module load qiime2/2019.10
+   42  qiime tools export --input-path table-with-k-no-mitochondria-n0-chloroplast.qza --output-path exported-feature-table
+   43  ls
+   44  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where "[Donor-status]='Chemotherapy treated CRC patient'" --o-filtered-table chemotreated-table.qza
+   45  mkdir individualgroupotutables
+   46  mv chemotreated-table.qza individualgroupotutables/
+   47  qiime composition add-pseudocount --i-table individualgroupotutables/chemotreated-table.qza --o-composition-table individualgroupotutables/comp-chemotreated-table.qza
+   48  qiime taxa collapse --i-table individualgroupotutables/chemotreated-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table chemotreated-table-phylum.qza
+   49  qiime taxa collapse --i-table individualgroupotutables/chemotreated-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table individualgroupotutables/chemotreated-table-phylum.qza
+   50  qiime composition add-pseudocount --i-table individualgroupotutables/chemotreated-table-phylum.qza --o-composition-table individualgroupotutables/comp-chemotreated-table-phylum.qza
+   51  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where "[Donor-status]='CRC patient'" --o-filtered-table CRCpatient-table.qza
+   52  mv CRCpatient-table.qza individualgroupotutables/
+   53  qiime composition add-pseudocount --i-table individualgroupotutables/CRCpatient-table.qza --o-composition-table individualgroupotutables/comp-CRCpatient-table.qza
+   54  qiime taxa collapse --i-table individualgroupotutables/chemotreated-table.qza --i-taxonomy taxonomy.qza --p-level 6 --o-collapsed-table individualgroupotutables/chemotreated-table-genus.qza
+   55  qiime taxa collapse --i-table individualgroupotutables/CRCpatient-table.qza --i-taxonomy taxonomy.qza --p-level 6 --o-collapsed-table individualgroupotutables/CRCpatient-table-genus.qza
+   56  qiime taxa collapse --i-table individualgroupotutables/CRCpatient-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table individualgroupotutables/CRCpatient-table-phylum.qza
+   57  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where "[Donor-status]='Surgically treated DRD patients'" --o-filtered-table individualgroupotutables/surgery-table.qza
+   58  qiime taxa collapse --i-table individualgroupotutables/surgery-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table individualgroupotutables/surgery-table-phylum.qza
+   59  qiime taxa collapse --i-table individualgroupotutables/surgery-table.qza --i-taxonomy taxonomy.qza --p-level 6 --o-collapsed-table individualgroupotutables/surgery-table-genus.qza
+   60  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where "[Donor-status]='Healthy individuals'" --o-filtered-table individualgroupotutables/healthy-table.qza
+   61  qiime taxa collapse --i-table individualgroupotutables/healthy-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table individualgroupotutables/healthy-table-phylum.qza
+   62  cat taxonomy.qza
+   63  PuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTY6cPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTY6cPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTY
+   64  qiime taxa collapse --i-table individualgroupotutables/healthy-table.qza --i-taxonomy taxonomy.qza --p-level 6 --o-collapsed-table individualgroupotutables/healthy-table-genus.qza
+   65  qiime taxa collapse --i-table individualgroupotutables/surgery-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table individualgroupotutables/surgery-table-phylum.qza
+   66  cd individualgroupotutables/
+   67  ls
+   68  cd /
+   69  cd work/unobioinformatics/ssravanam/
+   70  module load qiime2/2019.10
+   71  cd data
+   72  qiime taxa barplot --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --i-taxonomy taxonomy.qza --m-metadata-file mymetadata.txt --o-visualization taxa-filter-barplots.qzv
+   73  qiime feature-table filter-features --help
+   74  cd /work/unobioinformatics/ssravanam/
+   75  ls
+   76  module load qiime2/2019.10
+   77  qiime taxa collapse --i-table individualgroupotutables/healthy-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table individualgroupotutables/healthy-table-phylum.qza
+   78  cd data
+   79  qiime taxa collapse --i-table individualgroupotutables/healthy-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table individualgroupotutables/healthy-table-phylum.qza
+   80  source activate qiime2-2020.2
+   81  qiime taxa collapse --i-table individualgroupotutables/healthy-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table individualgroupotutables/healthy-table-phylum.qza
+   82  source deactivate qiime2-2020.2
+   83  module load qiime2/2019.10
+   84  qiime taxa collapse --i-table individualgroupotutables/healthy-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table individualgroupotutables/healthy-table-phylum.qza
+   85  cd individualgroupotutables/
+   86  ls
+   87  cd ..
+   88  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where "[Donor-status]='Healthy individuals'" --o-filtered-table individualgroupotutables/healthy-table.qza
+   89  qiime taxa collapse --i-table individualgroupotutables/healthy-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table individualgroupotutables/healthy-table-phylum.qza
+   90  qiime feature-table filter-samples --help
+   91  mkdir otu
+   92  qiime taxa collapse --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table table-L2.qza
+   93  mv table-L2.qza otu/
+   94  qiime taxa collapse --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --i-taxonomy taxonomy.qza --p-level 6 --o-collapsed-table otu/table-L6.qza
+   95  qiime taxa collapse --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --i-taxonomy taxonomy.qza --p-level 7 --o-collapsed-table otu/table-L7.qza
+   96  qiime tools export --input-path otu/table-L2.qza --output-path exported-table-L2
+   97  qiime tools export --input-path otu/table-L2.qza --output-path otu/exported-table-L2
+   98  qiime tools export --input-path otu/table-L6.qza --output-path otu/exported-table-L6
+   99  qiime tools export --input-path otu/table-L7.qza --output-path otu/exported-table-L7
+  100  R
+  101  module load compiler/pgi/13
+  102  module load biom-format/2.1
+  103  module load anaconda
+  104  r
+  105  R
+  106  R CMD install
+  107  module load R
+  108  R
+  109  module load R/3.5
+  110  module load R/3.6
+  111  install.packages('biom')
+  112  tidyverse
+  113  tidyverse --help
+  114  module load R/3.6
+  115  wget https://cran.r-project.org/package=biom
+  116  ls
+  117  R CMD INSTALL ./package=biom 
+  118  R CMD INSTALL ./package\=biom 
+  119  R CMD INSTALL package\=biom 
+  120  R CMD INSTALL package=biom 
+  121  ls
+  122  R CMD INSTALL ./biom_0.3.12.tar.gz 
+  123  R
+  124  Install.packages ./biom_0.3.12.tar.gz 
+  125  ls
+  126  R
+  127  cd ~
+  128  ls
+  129  R
+  130  cd /work/unobioinformatics/ssravanam/
+  131  cd data
+  132  cd/otu
+  133  cd otu
+  134  module load qiime2/2019.10
+  135  ls
+  136  cd exported-table-L2
+  137  ls
+  138  cd ..
+  139  mv exported-table-L2/feature-table.biom table-L2-biom
+  140  mv exported-table-L6/feature-table.biom table-L6-biom
+  141  mv exported-table-L7/feature-table.biom table-L7-biom
+  142  ls
+  143  cd ..
+  144  biome convert -i otu/table-L2.biom -o otu/table-L2-jason --to-json
+  145  biom convert -i otu/table-L2.biom -o otu/table-L2-jason --to-json
+  146  cd otu
+  147  ls
+  148  biom convert -i otu/table-L2-biom -o otu/table-L2-jason --to-json
+  149  cd ..
+  150  biom convert -i otu/table-L2-biom -o otu/table-L2-jason --to-json
+  151  biom convert -i otu/table-L6-biom -o otu/table-L6-jason --to-json
+  152  biom convert -i otu/table-L7-biom -o otu/table-L7-jason --to-json
+  153  cd otu/
+  154  ls
+  155  R
+  156  cd ..
+  157  qiime tools export --input-path table-with-k-no-mitochondria-n0-chloroplast.qza --output-path otu/table-filter-biom
+  158  cd otu
+  159  ls
+  160  mv table-filter-biom/feature-table.biom table-filtered-biom
+  161  cd ..
+  162  biom convert -i otu/table-filtered-biom -o table-filtered-biom --to-json
+  163  cd otu
+  164  ls
+  165  biom convert -i otu/table-filtered-biom -o otu/table-filtered-jason --to-json
+  166  cd ..
+  167  biom convert -i otu/table-filtered-biom -o otu/table-filtered-jason --to-json
+  168  cd otu
+  169  rm table-filtered-biom table-filtered-jason 
+  170  cd table-filter-biom/
+  171  ls
+  172  cd ../../
+  173  qiime tools export --input-path table-with-k-no-mitochondria-n0-chloroplast.qza --output-path otu/table-filter-biom
+  174  cp otu/table-filter-biom/feature-table.biom  otu/
+  175  cd otu
+  176  ls
+  177  mv feature-table.biom table-biom
+  178  cd ..
+  179  biom convert -i otu/table--biom -o otu/table-jason --to-json
+  180  biom convert -i otu/table-biom -o otu/table-jason --to-json
+  181  R
+  182  module load R/3.6
+  183  R
+  184  module load biom-format/2.1
+  185  R
+  186  module load qiime2/2019.10
+  187  qiime feature-table relative-frequency --help
+  188  qiime feature-table relative-frequency --i-table otu/table-L2.qza --o-relative-frequency-table table-rel-ab-L2.qza --output-dir rel-ab/
+  189  qiime feature-table relative-frequency --i-table otu/table-L6.qza --o-relative-frequency-table table-rel-ab-L6.qza --output-dir rel-ab/
+  190  qiime feature-table relative-frequency --i-table otu/table-L6.qza --o-relative-frequency-table table-rel-ab-L6.qza --output-dir rel-ab-L6/
+  191  qiime feature-table relative-frequency --i-table otu/table-L7.qza --o-relative-frequency-table table-rel-ab-L7.qza --output-dir rel-ab-L7/
+  192  ls -al
+  193  cd rel-ab
+  194  ls
+  195  cd ..
+  196  cd rel-ab-L6
+  197  ls
+  198  cd ..
+  199  qiime tools export --help
+  200  qiime tools export --input-path relativeabundance/table-rel-ab-L2.qza --output-path relativeabundance/table-rel-al-L2.biom
+  201  qiime tools export --input-path relativeabundance/table-rel-ab-L6.qza --output-path relativeabundance/table-rel-al-L6.biom
+  202  qiime tools export --input-path relativeabundance/table-rel-ab-L7.qza --output-path relativeabundance/table-rel-al-L7.biom
+  203  biom covert --help
+  204  biom convert --help
+  205  biom convert -i otu/table-L2-biom -o otu/table-L2.tsv --to-tsv
+  206  biom convert -i otu/table-L6-biom -o otu/table-L6.tsv --to-tsv
+  207  biom convert -i otu/table-L7-biom -o otu/table-L7.tsv --to-tsv
+  208  biom convert -i relativeabundance/table-rel-ab-L2.qza -o relativeabundance/table--rel-ab-L2.tsv --to-tsv
+  209  biom convert -i relativeabundance/table-rel-ab-L2.qza -o relativeabundance/table-rel-ab-L2.tsv --to-tsv
+  210  biom convert -i relativeabundance/table-rel-ab-L6.qza -o relativeabundance/table-rel-ab-L6.tsv --to-tsv
+  211  biom convert --help
+  212  biom convert -i relativeabundance/table-rel-ab-L6.qza -o relativeabundance/table-rel-ab-L6.tsv --header-key "taxonomy genus level" --to-tsv
+  213  biom convert -i relativeabundance/table-rel-ab-L6.qza -o relativeabundance/table-rel-ab-L6.tsv --header-key "taxonomy" --to-tsv
+  214  biom convert --help
+  215  biom convert -i relativeabundance/table-rel-ab-L6.qza -o relativeabundance/table-rel-ab-L6.tsv -m mymetadata.txt --to-tsv
+  216  import sys
+  217  reload(sys)
+  218  cd relativeabundance/
+  219  ls
+  220  cd table-rel-ab-L2.qza 
+  221  ls
+  222  cd table-rel-al-L2.biom/
+  223  ls
+  224  mv feature-table.biom table-rel-ab-L2.biom
+  225  cp table-rel-ab-L2.biom  ../
+  226  cd ..
+  227  ls
+  228  cd table-rel-al-L6.biom/
+  229  ls
+  230  mv feature-table.biom table-rel-ab-L6.biom
+  231  cd ..
+  232  cp table-rel-al-L6.biom/table-rel-ab-L6.biom  ./
+  233  cd table-rel-al-L7
+  234  cd table-rel-al-L7.biom/
+  235  ls
+  236  mv feature-table.biom table-rel-ab-L7.biom
+  237  cp table-rel-ab-L7.biom ../
+  238  cd ..
+  239  ls
+  240  biom convert -i relativeabundance/table-rel-ab-L6.biom -o relativeabundance/table-rel-ab-L6.tsv -m mymetadata.txt --to-tsv
+  241  cd ..
+  242  biom convert -i relativeabundance/table-rel-ab-L6.biom -o relativeabundance/table-rel-ab-L6.tsv -m mymetadata.txt --to-tsv
+  243  biom convert -i relativeabundance/table-rel-ab-L6.biom -o relativeabundance/table-rel-ab-L6.tsv  --to-tsv
+  244  biom convert -i relativeabundance/table-rel-ab-L7.biom -o relativeabundance/table-rel-ab-L7.tsv  --to-tsv
+  245  biom convert -i relativeabundance/table-rel-ab-L2.biom -o relativeabundance/table-rel-ab-L2.tsv  --to-tsv
+  246  biom convert -i otu/table-biom -o otu/table.tsv --to-tsv
+  247  ls -al
+  248  qiime taxa collapse --i-table individualgroupotutables/healthy-table.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table individualgroupotutables/healthy-table-phylum.qza
+  249  cd /work/unobioinformatics/ssravanam/
+  250  ls
+  251  cd data
+  252  module load qiime2/2019.2
+  253  module load qiime2/2019.10
+  254  qiime feature-table summarize --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --o-visualization table-with-k-no-mitochondria-n0-chloroplast.qzv --m-sample-metadata-file mymetadata.txt 
+  255  module load biom-format/2.1 
+  256  conda create -n r_env r-essentials r-base
+  257  source activate r_env
+  258  install.packages('biom')
+  259  install.packages("biom")
+  260  install.packages("biom-format")
+  261  install.package("biom")
+  262  R
+  263  conda install -c r biom
+  264  R
+  265  conda install -c r biom
+  266  conda install -c vegan
+  267  cd /work/unobioinformatics/ssravanam/
+  268  ls
+  269  module load qiime2/2019.10
+  270  module load anaconda
+  271  conda create -n R_packages r-biom=0.3.12 r-ggplot2=3.1.0 r-vegan=2.5_3 r-base=3.4 libgfortran-ng=5.4.0 libiconv=1.15
+  272  conda activate R_packages
+  273  R
+  274  cd data
+  275  mkdir R
+  276  mv R Rfiles
+  277  ls
+  278  R
+  279  ls
+  280  ls -al
+  281  qime tools export --input-path table-cr-99.qza --output-path table-cr-99.biom
+  282  module load qiime2/2019.10
+  283  qime tools export --input-path table-cr-99.qza --output-path table-cr-99.biom
+  284  qiime tools export --input-path table-cr-99.qza --output-path table-cr-99.biom
+  285  cd /work/unobioinformatics/ssravanam/
+  286  ls
+  287  cd data
+  288  module load qiime2/2019.10
+  289  module load anaconda
+  290  conda search ggplot2
+  291  conda search vegan
+  292  conda search readr
+  293  conda search devtools
+  294  conda create -n r_packages r-biom=0.3.12 r-ggplot2=3.1.0 r-vegan=2.5_3 r-base=3.4 libgfortran-ng=5.4.0 libiconv=1.15 r-readr=1.3.0 r-devtools=2.0.1
+  295  conda create -n r_packages r-biom=0.3.12 r-ggplot2=3.1.0 r-vegan=2.5_3 r-base=3.4 libgfortran-ng=5.4.0 libiconv=1.15 r-devtools=2.0.1
+  296  conda activate r_packages
+  297  R
+  298  cd otu
+  299  ls
+  300  module load R/3.6
+  301  R
+  302  conda activate r_packages
+  303  R
+  304  module load anaconda
+  305  conda activate r_packages
+  306  ls
+  307  cd ..
+  308  ls
+  309  module load anaconda
+  310  conda -n qiime1 python=2.7 qiime matplotlib=1.4.3 mock nose -c bioconda
+  311  conda -n qiime python=2.7 qiime matplotlib=1.4.3 mock nose -c bioconda
+  312  cd ..
+  313  conda create -n qiime1 python=2.7 qiime matplotlib=1.4.3 mock nose -c bioconda
+  314  conda activate qiime1
+  315  conda deactivate qiime1
+  316  conda deactivate 
+  317  ls
+  318  module load qiime2/2019.10
+  319  cd /work/unobioinformatics/ssravanam/
+  320  ls
+  321  cd data
+  322  ls
+  323  ls -al
+  324  cd paired
+  325  ls
+  326  cd ..
+  327  ls
+  328  cd dada2
+  329  ls
+  330  cd ..
+  331  mkdir closed reference OTU picking
+  332  module load qiime2/2019.10
+  333  qiime feature-table summarize --i-table table-cr-99.qza --o-visualization cr_OTUpicking/table-cr-99.qzv --m-sample-metadata-file mymetadata.txt 
+  334  ls
+  335  vi history.txt 
+  336  mkdir OTUfilter
+  337  qiime feature-table filter-samples --i-table cr
+  338  qiime feature-table filter-samples --i-table cr_OTUpicking/table-cr-99.qza --p-min-smaples 1 --o-filtered-table OTUfilter/contingency-table.qza
+  339  qiime feature-table filter-samples --i-table cr_OTUpicking/table-cr-99.qza --p-min-samples 1 --o-filtered-table OTUfilter/contingency-table.qza
+  340  qiime feature-table filter-features --i-table cr_OTUpicking/table-cr-99.qza --p-min-samples 1 --o-filtered-table OTUfilter/contingency-table.qza
+  341  qiime feature-table summarize --i-table OTUfilter/contingency-table.qza --o-visualization OTUfilter/contingency-table.qzv --m-sample-metadata-file mymetadata.txt 
+  342  qiime feature-table filter-features --i-table cr_OTUpicking/table-cr-99.qza --o-filtered-table OTUfilter/contingency-table.qza
+  343  qiime feature-table summarize --i-table OTUfilter/contingency-table.qza --o-visualization OTUfilter/contingency-table.qzv --m-sample-metadata-file mymetadata.txt 
+  344  ls
+  345  vi trimmscript
+  346  vi history.txt 
+  347  qiime vsearch uchime-denovo --i-table OTUfilter/contingency-table.qza --i-sequences rep-seqs.qza --output-dir uchime-dn-out
+  348  qiime feature-table filter-features --help
+  349  echo SampleId > samples-to-keep.tsv
+  350  vi samples-to-keep.tsv 
+  351  qiime vsearch uchime-denovo --i-table cr --i-sequences rep-seqs.qza --output-dir uchime-dn-out
+  352  qiime vsearch uchime-denovo --i-table cr_OTUpicking/table-cr-99.qza --i-sequences rep-seqs.qza --output-dir uchime-dn-out2
+  353  vi history.txt 
+  354  ls
+  355  R
+  356  module load anaconda
+  357  conda search qiime2R
+  358  conda search foreign
+  359  conda install -n r-packages r-foreign=0.8_80
+  360  conda install -n r-packages r-foreign=0.8_76
+  361  conda install -n r-packages r-foreign=0.8_71
+  362  conda install -n r-packages r-foreign=0.8_65
+  363  conda install -n R-packages r-foreign=0.8_65
+  364  module load anaconda
+  365  conda list
+  366  conda list -e
+  367  conda create -n sruthiR r-foreign=0.8_67
+  368  conda activate sruthiR
+  369  R
+  370  conda deactivate sruthiR
+  371  conda deactivate 
+  372  R
+  373  wget https://svn.r-project.org/R-packages/trunk/foreign
+  374  ls
+  375  R CMD INSTALL foreign 
+  376  R CMD INSTALL ./foreign 
+  377  wget https://svn.r-project.org/R-packages/trunk/foreign_0.8-80.tar.gz
+  378  ls -al
+  379  cd .. 
+  380  ls
+  381  cd data
+  382  ls
+  383  R CMD INSTALL ./foreign_0.8-8-.tar.gz
+  384  R CMD INSTALL ./foreign_0.8-80-.tar.gz
+  385  R CMD INSTALL ./foreign_0.8-80.tar.gz
+  386  R CMD INSTALL ./foreign_0.8-60.tar.gz
+  387  R
+  388  cd /
+  389  cd work/unobioinformatics/ssravanam/
+  390  ls
+  391  cd data
+  392  ls
+  393  module load qiime2/2019.10
+  394  qiime diversity beta-group-significance --i-distance-matrix core-metrics-results/bray_curtis_distance_matrix.qza --m-metadata-column Donor-status --o-visualization core-metrics-results/bray_curtis_significance_Donor-status.qzv
+  395  qiime diversity beta-group-significance --i-distance-matrix core-metrics-results/bray_curtis_distance_matrix.qza --m-metadata-file mymetadata.txt --m-metadata-column Donor-status --o-visualization core-metrics-results/bray_curtis_significance_Donor-status.qzv
+  396  qiime diversity beta-group-significance --i-distance-matrix core-metrics-results/jaccard_distance_matrix.qza --m-metadata-file mymetadata.txt --m-metadata-column Donor-status --o-visualization core-metrics-results/jaccard_significance_Donor-status.qzv
+  397  qiime diversity beta-group-significance --i-distance-matrix core-metrics-results/weighted_unifrac_distance_matrix.qza --m-metadata-file mymetadata.txt --m-metadata-column Donor-status --o-visualization core-metrics-results/weighted_significance_Donor-status.qzv
+  398  qiime emperor plot --i-pcoa core-metrics-results/weighted_unifrac_pcoa_results.qza --m-metadata-file mymetadata.txt --p-custom-axes Donor-status --o-visualization core-metrics-results/weighted_emporer_Donor-status.qzv
+  399  qiime emperor plot --i-pcoa core-metrics-results/weighted_unifrac_pcoa_results.qza --m-metadata-file mymetadata.txt --o-visualization core-metrics-results/weighted_emporer_Donor-status.qzv
+  400  qiime emperor plot --i-pcoa core-metrics-results/jaccard_pcoa_results.qza --m-metadata-file mymetadata.txt --o-visualization core-metrics-results/jaccard_emporer_Donor-status.qzv
+  401  qiime diversity alpha-group-significance --i-alpha-diversity core-metrics-results/shannon_vector.qza --m-metadata-file mymetadata.txt --o-visualization core-metrics-results/shannon-group-significance.qzv
+  402  qiime diversity alpha-group-significance --i-alpha-diversity core-metrics-results/observed_otus_vector.qza --m-metadata-file mymetadata.txt --o-visualization core-metrics-results/observedotus-group-significance.qzv
+  403  qiime feature-table summarize --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --o-visualization table-with-k-no-mitochondria-no-chloroplast.qzv --m-sample-metadata-file mymetadata.txt 
+  404  qiime feature-table tabulate-seqs --i-data rep-seqs-with-k-no-mitochondria-n0-chloroplast.qza --o-visualization rep-seqs-with-k-no-mitochondria-no-chloroplast.qzv 
+  405  qiime feature-table tabulate-seqs --i-data rep-seqs-cr-99.qza --o-visualization rep-seqs-cr-99.qzv
+  406  qiime feature-table summarize --i-table table-cr-99.qza --o-visualization table-cr-99.qzv --m-sample-metadata-file mymetadata.txt 
+  407  cd /work/unobioinformatics/ssravanam/
+  408  cd data
+  409  git add .
+  410  git commit -m "First commit"
+  411  git remote add origin https://github.com/ssravanam/SR-microbiome-analysis.git
+  412  git push -u origin master
+  413  git remote add origin https://github.com/ssravanam/SR-microbiome-analysis.git
+  414  git remote -v
+  415  $ git push origin master
+  416  git push -u origin master
+  417  git remote add origin https://github.com/ssravanam/sruthi-project.git
+  418  git remote -v
+  419  git push -u origin master
+  420  git reset HEAD .
+  421  git add .
+  422  git commit -m "First commit"
+  423  git remote add origin https://github.com/ssravanam/SR-microbiome-analysis.git
+  424  git remote -v
+  425  git push -u origin master
+  426  git push origin master
+  427  git remote add origin git@github.com:ssravanam/sruthi-project.git
+  428  git push origin master
+  429  git init
+  430  git add .
+  431  git commit -m "First commit"
+  432  git config --global user.name "ssravanam"
+  433  git remote add origin git@github.com:ssravanam/sruthi-project.git
+  434  git remote -v
+  435  git push origin master
+  436  git config --global user.name "ssravanam"
+  437  git config --global user.password "ABCabc123@"
+  438  git remote -v
+  439  git push origin master
+  440  git remote set-url origin https://github.com/ssravanam/sruthi-project.git
+  441  git push origin master
+  442  git init
+  443  git add .
+  444  git commit -m "First commit"
+  445  ls
+  446  cd ..
+  447  cp data/. /home/unobioinformatics/ssravanam/data/
+  448  cp /data/. /home/unobioinformatics/ssravanam/data/
+  449  cp data/* /home/unobioinformatics/ssravanam/data/
+  450  git init
+  451  git add .
+  452  git init
+  453  git add .
+  454  git init
+  455  git add .
+  456  git add ./*
+  457  cd /work/unobioinformatics/ssravanam/
+  458  ls
+  459  git init
+  460  gid add data
+  461  git add data
+  462  git init
+  463  git add /data
+  464  git add .
+  465  cd data
+  466  rm -f ./.git/index.lock
+  467  ls
+  468  git init
+  469  git add .
+  470  git add --all
+  471  git commit -m 'First commit'
+  472  git remote add origin https://github.com/ssravanam/sruthi-project.git
+  473  git remote -v
+  474  git push origin master
+  475  git push -f origin master
+  476  git config --global user.email "ssravanam@unomaha.edu"
+  477  git config --global user.name "ssravanam"
+  478  git push -u -f origin master
+  479  git commit -m "First commit"
+  480  git remote add origin "https://github.com/ssravanam/sruthi-project.git"
+  481  git config --global user.password "Venkatasusheela@1993"
+  482  git remote add origin "https://github.com/ssravanam/sruthi-project.git"
+  483  git push -u -f origin master
+  484  cd /work/unobioinformatics/ssravanam/
+  485  ls
+  486  cd /work/unobioinformatics/ssravanam/
+  487  ls
+  488  apt-get install git
+  489  sudo apt-get install git -y
+  490  git --version
+  491  git config --global user.name "ssravanam"
+  492  git config --global user.email "ssravanam@unomaha.edu"
+  493  git config --list
+  494  pwd
+  495  ls -al
+  496  gedit .git/
+  497  cd .git/
+  498  ls
+  499  gedit .config
+  500  cd ..
+  501  gedit .gitconfig
+  502  mkdir dataforgithub
+  503  cd dataforgithub/
+  504  cp data/* dataforgithub/
+  505  cd ..
+  506  cp data/* dataforgithub/
+  507  cd dataforgithub/
+  508  ls
+  509  cd ..
+  510  cd dataforgithub/
+  511  git status
+  512  git add *
+  513  git commit -m "First comment on my data" *
+  514  git push -u origin master 
+  515  git add --all
+  516  git commit -am "Comment"
+  517  git push
+  518  git add . --force
+  519  pgrep -a git
+  520  cd ..
+  521  rm .git/index.lock
+  522  rm .git/index
+  523  git read-tree --reset HEAD
+  524  cd data
+  525  git init
+  526  git add --all
+  527  cd /
+  528  cd work/unobioinformatics/ssravanam/
+  529  ls
+  530  cd data
+  531  git init
+  532  git add --all
+  533  git config --global user.name "ssravanam"
+  534  git config --global user.email "ssravanam@unomaha.edu"
+  535  git init
+  536  git add --all
+  537  git config --list
+  538  git init
+  539  git status
+  540  git add .
+  541  git status
+  542  git add --all
+  543  git status
+  544  github --version
+  545  git --version
+  546  git commit -m "F"
+  547  git add --all
+  548  cd ..
+  549  git init
+  550  git add data
+  551  git commit -m "data"
+  552  git status
+  553  git push -u origin master
+  554  git status
+  555  git commit -a
+  556  git status
+  557  git push https://github.com/ssravanam/sruthi-project.git --all
+  558  git config -l | grep url
+  559  git remote set-url origin "https://github.com/ssravanam/sruthi-project.git"
+  560  git config -l | grep url
+  561  git push https://github.com/ssravanam/sruthi-project.git --all
+  562  git push https://github.com/ssravanam/sruthi-project.git data
+  563  git status
+  564   git log
+  565  cd data
+  566  git push
+  567  git reset
+  568  git status
+  569  git config --list
+  570  git push https://github.com/ssravanam/sruthi-project.git --all
+  571  git status
+  572  cd /work/unobioinformatics/ssravanam/
+  573  ls
+  574  git clone https://github.com/ssravanam/sruthi-project.git 
+  575  git clone https://github.com/ssravanam/sruthi-project
+  576  cd data
+  577  git clone https://github.com/ssravanam/sruthi-project.git 
+  578  cp * sruthi-project/
+  579  git status
+  580  git add sruthi-project/
+  581  git commit -m "data"
+  582  git push https://github.com/ssravanam/sruthi-project.git 
+  583  git push https://github.com/ssravanam/sruthi-project.git --all
+  584  cd /work/unobioinformatics/ssravanam
+  585  cd data
+  586  clera
+  587  clear
+  588  git help config
+  589  git add --help
+  590  git status
+  591  git add -A
+  592  git sttaus
+  593  git status
+  594  git add .
+  595  git status
+  596  git log
+  597  git reset
+  598  git log
+  599  git remote -v
+  600  git branch -a
+  601  git add -A
+  602  git status
+  603  git reset
+  604  git reset data
+  605  git status
+  606  git log
+  607  git add *
+  608  git status
+  609  git init
+  610  git commi
+  611  git status
+  612  git commit -m "data files"
+  613  ls
+  614  git add trimmed_fastq/* uchimedenovo--out/* 
+  615  git --version
+  616  git --help
+  617  module load git
+  618  git init
+  619  git add *
+  620  git status
+  621  cd /work/unobioinformatics/ssravanam/
+  622  ls
+  623  git --version
+  624  yum install git
+  625  cd /work/unobioinformatics/ssra
+  626  cd /work/unobioinformatics/ssravanam/
+  627  ls
+  628  module load git
+  629  git add .
+  630  cd data
+  631  git add .
+  632  module load git
+  633  git init
+  634  git add .
+  635  git status
+  636  git add --all
+  637  cd ..
+  638  git add data
+  639  git rm --cached data/sruthi-project
+  640  git add data
+  641  git status
+  642  git commit -m "First"
+  643  git push -u origin master
+  644  git push --help
+  645  cd data
+  646  git reset
+  647  module load git
+  648  git add --all
+  649  git commit -m "First"
+  650  git add .
+  651  git status
+  652  git --help
+  653  error: The requested URL returned error: 403 Forbidden while accessing https://github.com/ssravanam/sruthi-project.git/info/refs
+  654  git reset
+  655  hit log
+  656  git log
+  657  git reset HEAD
+  658  git add .
+  659  git add --all
+  660  git add A
+  661  git add -A
+  662  git commit -m "First"
+  663  git add *
+  664  git commit -m "First"
+  665  git push -u origin master
+  666  git reset
+  667  module load git
+  668  git config --global user-name "ssravanam"
+  669  git config --global user.name "ssravanam"
+  670  git config --global user.email "ssravanam@unomaha.edu"
+  671  git init
+  672  ls
+  673  cd ..
+  674  ls
+  675  cd data
+  676  ls -al
+  677  git add .
+  678  git commit -m "Fi"
+  679  git status
+  680  git remote add origin https://github.com/ssravanam/sruthi-project.git
+  681  git push -u origin master
+  682  module load git
+  683  git reset
+  684  git init
+  685  echo "# Juness" >> README.md
+  686  git init
+  687  git add README.md
+  688  git commit -m "first commit"
+  689  git remote add origin https://github.com/ssravanam/Juness.git
+  690  git push -u origin master
+  691  git remote add origin https://github.com/ssravanam/Juness.git
+  692  git push -u origin master
+  693  git fetch origin master
+  694  git merge origin master
+  695  git push -u origin master
+  696  git fetch origin master:tmp
+  697  git push --force origin master
+  698  git push origin master
+  699  git init
+  700  git add .
+  701  git commit -m "first commit"
+  702  git push origin master
+  703  git psh --help
+  704  git pull origin master
+  705  git fetch origin master
+  706  ls
+  707  history
+  708  cd /work/unobioinformatics/ssravanam/
+  709  ls
+  710  cd sruthi-project/
+  711  ls -la
+  712  module load git
+  713  git --version
+  714  exit
+  715  cd $WORK
+  716  ls
+  717  cd sruthi-project/
+  718  ls
+  719  git branch -a
+  720  git checkout master
+  721  git pull origin master
+  722  ls
+  723  module purge
+  724  module load git
+  725  ls
+  726  vim natasha_test.txt
+  727  git add natasha_test.txt 
+  728  git commit
+  729  git push origin master
+  730  more .git/config 
+  731  more ~/.gitconfig 
+  732  git push origin master
+  733  history
+  734  git pull origin master
+  735  git pull osiring master
+  736  git pull origin master
+  737  git rm natasha_test.txt 
+  738  git commit
+  739  more ~/.gitconfig 
+  740  git push origin master
+  741  exit
+  742  ls
+  743  exit
+  744  cd /work/unobioinformatics/ssravanam/
+  745  cd sruthi-project/
+  746  ls
+  747  vim natasha_test.txt
+  748  cd ..
+  749  cd data
+  750  module load git
+  751  git checkout master
+  752  git pull origin master
+  753  git add .
+  754  git commit
+  755  git push oriign master
+  756  git push origin master
+  757  git add --all
+  758  git add *
+  759  git commit
+  760  git push origin master
+  761  module load git
+  762  git pull origin master
+  763  git init
+  764  git add *
+  765  git commit
+  766  git push origin master
+  767  git init
+  768  git checkout master
+  769  git pull origin master
+  770  git add *
+  771  git commit
+  772  git push origin master
+  773  git add .
+  774  git push origin master
+  775  cd /work/unobioinformatics/ssravanam/
+  776  ls
+  777  cd data
+  778  module load qiime2/2019.10
+  779  biom convert --help
+  780  biom covert -i taxonomy.qza taxonomybiom --to-hdf5
+  781  biom convert -i taxonomy.qza taxonomybiom --to-hdf5
+  782  biom convert -i taxonomy.qza -o taxonomybiom --to-hdf5
+  783  biom convert --help
+  784  ls
+  785  biom convert -i table-with-k-no-mitochondria-n0-chloroplast.qza -o tablebiom -m mymetadata.txt --to-hdf5
+  786  qiime tools export --help
+  787  qiime tools export --input-path table-with-k-no-mitochondria-n0-chloroplast.qza --output-path tablebiom 
+  788  qiime tools export --input-path taxonomy.qza --output-path taxonomybiom 
+  789  ls
+  790  cd /work/unobioinformatics/ssravanam/
+  791  ls
+  792  cd data
+  793  ls
+  794  module load qiime2/2019.10
+  795  mkdir ancom
+  796  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where"[Donor-status]='CRC patient'" --o-filtered-table ancom/CRCpatienttable.qza
+  797  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where" [Donor-status]='CRC patient'" --o-filtered-table ancom/CRCpatienttable.qza
+  798  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where "[Donor-status]='CRC patient'" --o-filtered-table ancom/CRCpatienttable.qza
+  799  qiime taxa collapse --i-table ancom/CRCpatienttable.qza --i-taxonomy taxonomy.qza --o-collapsed-table ancom/CRCpatientcollapsetable.qza
+  800  qiime taxa collapse --i-table ancom/CRCpatienttable.qza --i-taxonomy taxonomy.qza --o-collapsed-table --p-level 2 ancom/CRCpatientphylatable.qza
+  801  qiime taxa collapse --i-table ancom/CRCpatienttable.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table ancom/CRCpatientphylatable.qza
+  802  qiime taxa collapse --i-table ancom/CRCpatienttable.qza --i-taxonomy taxonomy.qza --p-level 6 --o-collapsed-table ancom/CRCpatientgenustable.qza
+  803  qiime taxa collapse --i-table ancom/CRCpatienttable.qza --i-taxonomy taxonomy.qza --p-level 7 --o-collapsed-table ancom/CRCpatientspeciestable.qza
+  804  qiime feature-table realtive-frequency --i-table ancom/CRCpatientphylatable.qza --o-relative-frequency-table ancom/CRCpatient-rel-phyla-table.qza
+  805  qiime feature-table relative-frequency --i-table ancom/CRCpatientphylatable.qza --o-relative-frequency-table ancom/CRCpatient-rel-phyla-table.qza
+  806  qiime feature-table relative-frequency --i-table ancom/CRCpatientgenustable.qza --o-relative-frequency-table ancom/CRCpatient-rel-genus-table.qza
+  807  qiime feature-table relative-frequency --i-table ancom/CRCpatientspeciestable.qza --o-relative-frequency-table ancom/CRCpatient-rel-species-table.qza
+  808  qiime tools export ancom/CRCpatient-rel-phyla-table.qza --output-dir CRCwevk;ng
+  809  qiime tools export --input-path ancom/CRCpatient-rel-phyla-table.qza --output-path ancom/
+  810  cd ancom
+  811  ls
+  812  qiime tools export --input-path ancom/CRCpatient-rel-phyla-table.qza --output-path ancom/ --to-tsv
+  813  biom convert --i feature-table.biom -o CRCpatientsrelphylatable.tsv --to-tsv
+  814  biom convert -i feature-table.biom -o CRCpatientsrelphylatable.tsv --to-tsv
+  815  ls
+  816  mv feature-table.biom CRCpatientrelphylatable.biom
+  817  qiime tools export --input-path CRCpatient-rel-genus-table.qza --output-path ./
+  818  ls
+  819  biom convert -i feature-table.biom -o CRCpatientsrelgenustable.tsv --to-tsv
+  820  mv feature-table.biom CRCpatientrelgenustable.biom
+  821  qiime tools export --input-path CRCpatient-rel-species-table.qza --output-path ./
+  822  biom convert -i feature-table.biom -o CRCpatientsrelspeciestable.tsv --to-tsv
+  823  mv feature-table.biom CRCpatientrelspeciestable.biom
+  824  ls
+  825  cd ..
+  826  mkdir healthyrelabundances
+  827  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where "[Donor-status]='Healthy individual'" --o-filtered-table healthyrelabundances/healthytable.qza
+  828  ls
+  829  qiime taxa collapse --i-table healthyrelabundances/healthytable.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table healthyrelabundances/healthyphylatable.qza
+  830  qiime taxa collapse --i-table healthyrelabundances/healthytable.qza --i-taxonomy taxonomy.qza --p-level 6 --o-collapsed-table healthyrelabundances/healthygenustable.qza
+  831  qiime taxa collapse --i-table healthyrelabundances/healthytable.qza --i-taxonomy taxonomy.qza --p-level 7 --o-collapsed-table healthyrelabundances/healthyspeciestable.qza
+  832  qiime feature-table relative-frequency --i-table healthyrelabundances/healthyphylatable.qza --o-relative-frequency-table healthyrelabundances/healthy-rel-phyla-table.qza
+  833  qiime feature-table relative-frequency --i-table healthyrelabundances/healthygenustable.qza --o-relative-frequency-table healthyrelabundances/healthy-rel-genus-table.qza
+  834  qiime feature-table relative-frequency --i-table healthyrelabundances/healthyspeciestable.qza --o-relative-frequency-table healthyrelabundances/healthy-rel-species-table.qza
+  835  cd healthyrelabundances/
+  836  ls
+  837  qiime tools export healthy-rel-phyla-table.qza --output-path ./
+  838  qiime tools export --input-path healthy-rel-phyla-table.qza --output-path ./
+  839  ls
+  840  mv feature-table.biom healthyrel-phyla-table.biom
+  841  ls
+  842  biom convert -i healthy-rel-phyla-table.qza -o healthy-rel-phyla-table.tsv --to-tsv
+  843  biom convert -i healthyrel-phyla-table.biom -o healthy-rel-phyla-table.tsv --to-tsv
+  844  qiime tools export --input-path healthy-rel-genus-table.qza --output-path ./
+  845  mv feature-table.biom healthyrel-genus-table.biom
+  846  biom convert -i healthyrel-genus-table.biom -o healthy-rel-genus-table.tsv --to-tsv
+  847  qiime tools export --input-path healthy-rel-species-table.qza --output-path ./
+  848  mv feature-table.biom healthyrel-species-table.biom
+  849  biom convert -i healthyrel-genus-table.biom -o healthy-rel-species-table.tsv --to-tsv
+  850  biom convert -i healthyrel-genus-table.biom -o healthy-rel-genus-table.tsv --to-tsv
+  851  biom convert -i healthyrel-species-table.biom -o healthy-rel-species-table.tsv --to-tsv
+  852  ls
+  853  cd ..
+  854  mkdir surgeryrelabundances
+  855  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where "[Donor-status]='Chemotherapy treated CRC patient'" --o-filtered-table chemorelabundances/healthytable.qza
+  856  mv chemorelabundances/
+  857  ls
+  858  cd chemorelabundances/
+  859  ls
+  860  mv healthytable.qza chemotable.qza
+  861  cd ..
+  862  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where "[Donor-status]='Chemotherapy treated CRC patient'" --o-filtered-table chemorelabundances/chemotable.qza
+  863  qiime taxa collapse --i-table chemorelabundances/chemotable.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table chemorelabundances/chemophylatable.qza
+  864  qiime taxa collapse --i-table chemorelabundances/chemotable.qza --i-taxonomy taxonomy.qza --p-level 6 --o-collapsed-table chemorelabundances/chemogenustable.qza
+  865  qiime taxa collapse --i-table chemorelabundances/chemotable.qza --i-taxonomy taxonomy.qza --p-level 7 --o-collapsed-table chemorelabundances/chemospeciestable.qza
+  866  qiime feature-table relative-frequency --i-table chemorelabundances/chemophylatable.qza --o-relative-frequency-table chemorelabundances/chemo-rel-phyla-table.qza
+  867  qiime feature-table relative-frequency --i-table chemorelabundances/chemogenustable.qza --o-relative-frequency-table chemorelabundances/chemo-rel-genus-table.qza
+  868  qiime feature-table relative-frequency --i-table chemorelabundances/chemospeciestable.qza --o-relative-frequency-table chemorelabundances/chemo-rel-species-table.qza
+  869  cd chemorelabundances/
+  870  ls
+  871  qiime tools export --input-path chemo-rel-phyla-table.qza --output-path ./
+  872  mv feature-table.biom chemo-rel-phyla-table.biom
+  873  biom convert -i chemo-rel-phyla-table.biom -o chemo-rel-phyla-table.tsv --to-tsv
+  874  qiime tools export --input-path chemo-rel-genus-table.qza --output-path ./
+  875  mv feature-table.biom chemo-rel-genus-table.biom
+  876  biom convert -i chemo-rel-genus-table.biom -o chemo-rel-genus-table.tsv --to-tsv
+  877  qiime tools export --input-path chemo-rel-species-table.qza --output-path ./
+  878  mv feature-table.biom chemo-rel-species-table.biom
+  879  biom convert -i chemo-rel-species-table.biom -o chemo-rel-species-table.tsv --to-tsv
+  880  cd ..
+  881  mkdir surgeryrelabundancies
+  882  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where "[Donor-status]='Surgically treated DRD patients'" --o-filtered-table surgeryrelabundances/surgerytable.qza
+  883  qiime feature-table filter-samples --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --m-metadata-file mymetadata.txt --p-where "[Donor-status]='Surgically treated DRD patients'" --o-filtered-table surgeryrelabundancies/surgerytable.qza
+  884  qiime taxa collapse --i-table surgeryrelabundancies/surgerytable.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table chemorelabundancies/surgeryphylatable.qza
+  885  qiime taxa collapse --i-table surgeryrelabundancies/surgerytable.qza --i-taxonomy taxonomy.qza --p-level 2 --o-collapsed-table surgeryrelabundancies/surgeryphylatable.qza
+  886  qiime taxa collapse --i-table surgeryrelabundancies/surgerytable.qza --i-taxonomy taxonomy.qza --p-level 6 --o-collapsed-table chemorelabundancies/surgerygenustable.qza
+  887  qiime taxa collapse --i-table surgeryrelabundancies/surgerytable.qza --i-taxonomy taxonomy.qza --p-level 6 --o-collapsed-table surgeryrelabundancies/surgerygenustable.qza
+  888  qiime taxa collapse --i-table surgeryrelabundancies/surgerytable.qza --i-taxonomy taxonomy.qza --p-level 7 --o-collapsed-table surgeryrelabundancies/surgeryspeciestable.qza
+  889  qiime feature-table relative-frequency --i-table surgeryrelabundancies/surgeryphylatable.qza --o-relative-frequency-table surgeryrelabundancies/surgery-rel-phyla-table.qza
+  890  qiime feature-table relative-frequency --i-table surgeryrelabundancies/surgerygenustable.qza --o-relative-frequency-table surgeryrelabundancies/surgery-rel-genus-table.qza
+  891  qiime feature-table relative-frequency --i-table surgeryrelabundancies/surgeryspeciestable.qza --o-relative-frequency-table surgeryrelabundancies/surgery-rel-species-table.qza
+  892  cd surgeryrelabundancies/
+  893  ls
+  894  qiime tools export --input-path surgery-rel-phyla-table.qza --output-path ./
+  895  mv feature-table.biom surgery-rel-phyla-table.biom
+  896  biom convert -i surgery-rel-phyla-table.biom -o surgery-rel-phyla-table.tsv --to-tsv
+  897  qiime tools export --input-path surgery-rel-genus-table.qza --output-path ./
+  898  mv feature-table.biom surgery-rel-genus-table.biom
+  899  biom convert -i surgery-rel-genus-table.biom -o surgery-rel-genus-table.tsv --to-tsv
+  900  qiime tools export --input-path surgery-rel-species-table.qza --output-path ./
+  901  mv feature-table.biom surgery-rel-species-table.biom
+  902  biom convert -i surgery-rel-species-table.biom -o surgery-rel-species-table.tsv --to-tsv
+  903  ls
+  904  cd /work/unobioinformatics/ssravanam/
+  905  ls
+  906  cd data
+  907  module load qiime2/2019.10
+  908  qiime picrust2 --help
+  909  qiime picrust2 full-pipeline --help
+  910  cd /work/unobioinformatics/ssravanam/
+  911  ls
+  912  cd data
+  913  module load qiime2/2019.10
+  914  qiime picrust2 full-pipeline --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --i-seq seq-
+  915  ls
+  916  qiime picrust2 full-pipeline --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --i-seq rep-seqs-with-k-no-mitochondria-n0-chloroplast.qza --output-dir q2-picrust2_output --p-threads 1 --p-hsp-method pic --p-max-nsti 2 --verbose
+  917  la
+  918  ls
+  919  qiime picrust2 full-pipeline --i-table table.qza --i-seq rep-seqs.qza --output-dir q2-picrust2_output --p-threads 1 --p-hsp-method pic --p-max-nsti 2 --verbose
+  920  ls
+  921  qiime picrust2 full-pipeline --i-table table.qza --i-seq rep-seqs.qza --output-dir q2-picrust2_output --p-threads 1 --p-hsp-method pic --p-max-nsti 2 --verbose
+  922  qiime picrust2 full-pipeline --h
+  923  qiime picrust2 --help
+  924  qiime picrust2 custom-tree-pipeline --help
+  925  qiime picrust2 custom-tree-pipeline --i-table table-with-k-no-mitochondria-n0-chloroplast.qza --i-tree rooted-tree.qza --output-dir picrust2out --verbose
+  926  qiime picrust2 custom-tree-pipeline --i-table table.qza --i-tree rooted-tree.qza --output-dir picrust2out --verbose
+  927  ls
+  928  qiime picrust2 custom-tree-pipeline --i-table table-cr-99.qza --i-tree rooted-tree.qza --output-dir picrust2out --verbose
+  929  qiime picrust2 custom-tree-pipeline --help
+  930  qiime picrust2 custom-tree-pipeline --i-table table-cr-99.qza --i-tree rooted-tree.qza --output-dir picrust2out --verbose
+  931  cd /work/unobioinformatics/ssravanam/
+  932  ls
+  933  cd data
+  934  ls
+  935  module load qiime2
+  936  qiime picrust2 full-pipeline --i-table table.qza --output-dir q2-picrust2-output --p-threads1 --p-hsp-method pic --p-max-nsti 2 --verbose
+  937  qiime2 infor
+  938  qiime2 info
+  939  qiime2 --help
+  940  module load qiime2
+  941  qiime2 --help
+  942  qiime2 env
+  943  qiime2 ennv
+  944  qiime2 --help
+  945  qiime2
+  946  qiime info
+  947  qiime --help
+  948  qiime picrust2 --help
+  949  qiime2 picrust2 --help
+  950  module load qiime2/2019.10
+  951  qiime2 picrust2 --help
+  952  qiime
+  953  qiime i
+  954  qiime picrust2 full-pipeline 
+  955  qiime picrust2 full-pipeline --i-table table.qza --output-dir q2-picrust2-output --p-threads1 --p-hsp-method pic --p-max-nsti 2 --verbose
+  956  qiime picrust2 full-pipeline --i-table table.qza --output-dir q2-picrust2-output --p-threads 1 --p-hsp-method pic --p-max-nsti 2 --verbose
+  957  qiime picrust2 full-pipeline --i-table table.qza --i-seq rep-seqs.qza--output-dir q2-picrust2-output --p-threads 1 --p-hsp-method pic --p-max-nsti 2 --verbose
+  958  qiime picrust2 full-pipeline --i-table table.qza --i-seq rep-seqs.qza --output-dir q2-picrust2-output --p-threads 1 --p-hsp-method pic --p-max-nsti 2 --verbose
+  959  cd /work/unobioinformatics/ssravanam/
+  960  ls
+  961  cd data
+  962  ls
+  963  git init
+  964  module load git
+  965  git checkout master
+  966  git pull origin master vim sruthitest.txt
+  967  vim sruthitest.txt
+  968  git add sruthitest.txt 
+  969  git commit
+  970  git push origin master
+  971  git pull origin master 
+  972  git pull --rebase origin
+  973  git rm sruthitest.txt 
+  974  git pull --rebase origin
+  975  git reset --hard
+  976  git pull --rebase origin
+  977  git branch -a
+  978  git checkout -b ssrav
+  979  git branch -a
+  980  vim test1.txt
+  981  git add test1.txt 
+  982  git commit
+  983  git push origin ssrav
+  984  cd ..
+  985  mkdir sruthitest
+  986  cd sruthitest/
+  987  git clone https://github.com/ssravanam/sruthi-project.git
+  988  ls
+  989  cd sruthi-project/
+  990  ls
+  991  git checkout -b ssrav
+  992  vim texttest.txt
+  993  git add texttest.txt 
+  994  git commit
+  995  git push origin ssrav
+  996  git checkout master
+  997  git pull origin master
+  998  git rm texttest.txt 
+  999  git commit
+ 1000  git push origin master
+ 1001  cd /work/unobioinformatics/ssravanam/
+ 1002  ls
+ 1003  cd data
+ 1004  ls
+ 1005  vi history.txt 
+ 1006  history > history1.txt
